@@ -1,0 +1,27 @@
+Bonjour à tous,
+
+Voici quelques infos autour du langage Julia que j’ai repéré ce mois de novembre.
+
+Visiblement Julia 1.3 vient de sortir sans être encore annoncé officiellement :-)
+https://github.com/JuliaLang/julia/releases/tag/v1.3.0
+
+Pour les nouveautés voir ici https://docs.julialang.org/en/v1.3/NEWS/
+Il y a des ameliorations sur le support du multithreading. Vous avez des examples que vous
+pouvez essayer sur ce depot github https://github.com/mbauman/ParallelWorkshop2019
+
+Je conseille ce post de blog de Ken Fisher super interessant sur du machine learning sur des données avec cryptage homomorphique.
+
+Le package https://github.com/JuliaComputing/ToyFHE.jl  et 
+le post https://juliacomputing.com/blog/2019/11/22/encrypted-machine-learning.html
+
+Il y a également un autre article intitulé "Reliable and Reproducible Binary Artifacts for Julia Packages”
+https://julialang.org/blog/2019/11/artifacts
+
+ou malheureusement je n’ai pas tout compris. Si une personne sur cette liste peut nous faire un resumé
+ce serait formidable. J’ai l’impression que des choses interessantes y sont exposées.
+
+N’oubliez pas le meetup a Paris le 3 decembre https://julia-users-paris.github.io/
+
+Bonnes fin d’année a tous
+
+Pierre
