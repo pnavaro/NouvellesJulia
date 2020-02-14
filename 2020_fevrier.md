@@ -1,0 +1,67 @@
+Bonjour à tous,
+
+Les téléchargements de Julia ont augmenté de 77% en 2019 en passant de 7,3 à 12.95 millions.
+
+Voici quelques liens autour du langage Julia que j’ai repéré ce mois-ci:
+—
+
+
+A collection of Deep Learning Koans written for Flux.jl and Julia Programming language. 
+
+https://github.com/adamwespiser/deep-learning-koans
+
+Une manière originale d’apprentissage fondée sur
+l’utilisation du “test driven development”. Le README est clair et détaillé.  Les tests sont déjà écrits et
+c’est à nous de coder les fonctions pour qu’ils passent à la manière d’un puzzle. Intéressant.
+
+—
+
+How To Train Interpretable Neural Networks That Accurately Extrapolate From Small Data
+
+https://www.stochasticlifestyle.com/how-to-train-interpretable-neural-networks-that-accurately-extrapolate-from-small-data/
+
+Encore un post de Chris Rackauckas sur l’utilisation conjointe de l’analyse numérique et des statistiques pour résoudre des problèmes
+d’évolution. Epatant.
+
+—
+
+L'algorithme t-SNE (t-distributed stochastic neighbor embedding) est un algorithme de reduction de dimension. Ici un tutoriel 
+avec en plus un court notebook supplémentaire contenant des conseils pour améliorer les performances de votre code Julia.
+
+https://github.com/nassarhuda/JuliaTutorials
+
+—
+
+Statistics with Julia: Fundamentals for Data Science, Machine Learning and Artificial Intelligence.
+
+https://drive.google.com/file/d/1HX61MfwS99zX6HXoh-r1tYbZhQoYJZ1h/view
+
+Un lien vers un livre en cours de redaction (plus de 400 pages et beaucoup de code)
+
+correctif : La dernière version DRAFT du livre 
+Statistics with Julia: Fundamentals for Data Science, Machine Learning and Artificial Intelligence. 
+Hayden Klok & Yoni Nazarathy January 20, 2020
+se trouve ici : 
+
+https://people.smp.uq.edu.au/YoniNazarathy/julia-stats/StatisticsWithJulia.pdf
+
+et son code là :
+
+https://github.com/h-Klok/StatsWithJuliaBook
+
+
+
+—
+
+Almost Trivial: Parallelizing a Specialized Matrix Type in Julia
+
+https://mdavezac.github.io/blog/
+
+Un exemple didactique de parallélisation par bloc.
+
+Le notebook est dispo ici https://github.com/mdavezac/blog
+
+
+A bientôt
+
+Pierre
