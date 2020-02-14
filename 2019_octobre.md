@@ -1,0 +1,32 @@
+Bonjour à tous,
+
+Dernières infos repérées à propos de Julia
+
+- Réservez vos dates pour JuliaCon 2020 à Lisboa fin juillet. https://juliacon.org/2020/
+- Meetup à Paris le 17 octobre https://julia-users-paris.github.io/
+- La première session de la formation TriScale du 25 au 27 novembre à Paris. https://www.triscale-innov.com/training/julialang/
+
+Pour les anciens utilisateurs MATLAB et Python j’ai trouvé ce site pratique qui permet de voir les différentes syntaxes
+
+https://cheatsheets.quantecon.org/
+
+Je n’ai pas vu de post de blog ou articles marquants ce mois-ci mais j’ai découvert ce fil sur le discourse
+
+https://discourse.julialang.org/t/how-hard-would-it-be-to-implement-numpy-jl-i-e-numpy-in-julia/22080/52
+
+Le sujet de départ est “Serait-il intéressant d’utiliser du langage Julia pour accélérer du Python à la manière de Numba ou Pythran ?”
+
+La discussion est très animée et il y a beaucoup de choses intéressantes à lire. Notamment sur la place de Julia
+par rapport aux autres langages. Pour ceux qui ont un peu de temps car c’est assez long.
+
+Un dernier lien pour les utilisateurs de R, ce message date de 5 ans mais il s’agit d’une belle réussite de passage de R à Julia.
+C’est un message de Douglas Bates l’un des développeurs du package R  lme4 https://cran.r-project.org/web/packages/lme4/index.html
+qui parle des raisons qui l’ont encouragé à basculer sur Julia et à développer MixedModels https://github.com/dmbates/MixedModels.jl.
+
+Ici un exemple intéressant d'interaction R <-> Julia avec JuliaCall et RCall de ces deux packages. https://rpubs.com/dmbates/377897
+
+A bientôt
+
+Pierre
+
+
