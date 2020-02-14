@@ -55,7 +55,8 @@ args = parser.parse_args()
 content = sys.stdin.read()
 
 # render the markdown into HTML 
-css = str(subprocess.check_output(['pygmentize', '-S', 'colorful', '-a', '.codehilite', '-f', 'html']))
+css = subprocess.check_output(['pygmentize', '-S', 'colorful', '-a', '.codehilite', '-f', 'html'])
+css = css.decode("utf-8")
 
 content = content.strip()
 html_content = '<style type="text/css">'+css+'</style>'
@@ -64,7 +65,7 @@ with open("three-balls.png", "rb") as image_file:
     encoded_string = (base64.b64encode(image_file.read())).decode("utf-8")
 
 html_content += '<img src="data:image/png;base64,'+encoded_string+'" />'
-html_content += markdown.markdown(content, extensions=['extra', 'codehilite', 'fenced_code'])
+html_content += markdown.markdown(content, extensions=['extra', 'codehilite', 'pymdownx.superfences'])
 
 # create a multipart email message
 message = MIMEMultipart('alternative')
@@ -78,7 +79,6 @@ locale.setlocale(locale.LC_ALL, 'fr_FR')
 month = today.strftime("%B")
 year = today.strftime("%Y")
 message['Subject'] = f"Nouvelles Julia {month} {year}"
-
 
 message.attach(MIMEText(content, 'plain'))
 message.attach(MIMEText(html_content, 'html'))
