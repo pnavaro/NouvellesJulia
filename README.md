@@ -1,4 +1,4 @@
-# NouvellesJulia
+# Nouvelles Julia
 
 Quelques liens et actualités sur le langage Julia en francais.
 
