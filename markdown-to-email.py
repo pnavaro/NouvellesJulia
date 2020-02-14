@@ -28,6 +28,7 @@ import argparse
 import smtplib
 import subprocess
 import datetime, locale
+import base64
 
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -57,9 +58,13 @@ content = sys.stdin.read()
 css = str(subprocess.check_output(['pygmentize', '-S', 'colorful', '-a', '.codehilite', '-f', 'html']))
 
 content = content.strip()
-html_content = markdown.markdown(content, extensions=['extra', 'codehilite', 'fenced_code'])
-print(html_content)
-html_content = '<style type="text/css">'+css+'</style>'+"<img src='three-balls.png'>"+html_content
+html_content = '<style type="text/css">'+css+'</style>'
+
+with open("three-balls.png", "rb") as image_file:
+    encoded_string = (base64.b64encode(image_file.read())).decode("utf-8")
+
+html_content += '<img src="data:image/png;base64,'+encoded_string+'" />'
+html_content += markdown.markdown(content, extensions=['extra', 'codehilite', 'fenced_code'])
 
 # create a multipart email message
 message = MIMEMultipart('alternative')
@@ -72,14 +77,9 @@ today = datetime.datetime.now()
 locale.setlocale(locale.LC_ALL, 'fr_FR')
 month = today.strftime("%B")
 year = today.strftime("%Y")
-
 message['Subject'] = f"Nouvelles Julia {month} {year}"
-img_data = open("three-balls.png", 'rb').read()
-image = MIMEImage(img_data, name=os.path.basename("three-balls.png"))
 
-# attach the message parts
-message.add_header('Content-Disposition', 'attachment', filename="three-balls.png")
-message.attach(image)
+
 message.attach(MIMEText(content, 'plain'))
 message.attach(MIMEText(html_content, 'html'))
 
