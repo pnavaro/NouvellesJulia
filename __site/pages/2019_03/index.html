@@ -1,0 +1,10 @@
+<!doctype html> <html lang=en > <meta charset=UTF-8 > <meta name=viewport  content="width=device-width, initial-scale=1"> <link rel=stylesheet  href="/NouvellesJulia/libs/katex/katex.min.css"> <link rel=stylesheet  href="/NouvellesJulia/libs/highlight/github.min.css"> <link rel=stylesheet  href="/NouvellesJulia/css/franklin.css"> <link rel=stylesheet  href="/NouvellesJulia/css/hypertext.css"> <link rel=icon  href="/NouvellesJulia/assets/favicon.png"> <title>Mars 2019</title> <header> <h1><a href="/NouvellesJulia/">Nouvelles Julia</a></h1> <nav> <a href="/NouvellesJulia/" class=current >Home</a> | <a href="https://www.juliafran.org">JuliaFran</a> <hr/> </nav> </header> <div class=franklin-content > <h1 id=mars_2019 ><a href="/NouvellesJulia/pages/2019_03/index.html#mars_2019">Mars 2019</a></h1> <p>Le service https://mybinder.org vient de passer à julia 1.1. Voici le lien vers la <a href="https://github.com/binder-examples/demo-julia">démo</a>.</p> <p>Pour activer le service sur Github vous devez posséder un fichier <code>Project.toml</code> dans votre dépôt et c’est tout. Vos notebooks seront accessibles en ligne sur <a href="https://mybinder.org">binder</a>.</p> <p>Pour créer ce fichier <code>Project.toml</code>, lancer julia dans le répertoire du dépôt et basculer en mode Pkg, activer et ajouter vos dépendances.</p> <pre><code class=language-julia-repl >julia>]
+(v1.1) pkg> activate .
+(math-julia) pkg> add FFTW
+  Updating registry at `~/.julia/registries/General`
+  Updating git-repo `https://github.com/JuliaRegistries/General.git`
+ Resolving package versions...
+  Updating `~/JuliaProjects/math-julia/Project.toml`
+  [7a1cc6ca] + FFTW v0.2.4
+  Updating `~/JuliaProjects/math-julia/Manifest.toml`
+  [621f4979] + AbstractFFTs v0.3.2</code></pre> <div class=page-foot > <div class=copyright > &copy; Pierre Navaro. Last modified: February 15, 2020. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>. </div> </div> </div> <script src="/NouvellesJulia/libs/highlight/highlight.pack.js"></script> <script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: ' '});</script>

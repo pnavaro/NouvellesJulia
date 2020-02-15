@@ -6,16 +6,16 @@ the config file by setting hasmath = false for instance and just setting it to t
 where appropriate -->
 
 - 2020
-    * [Mars](/2020_03/)
-    * [Février](/2020_02/)
-    * [Janvier](/2020_01/)
+    * [Mars](/pages/2020_03/)
+    * [Février](/pages/2020_02/)
+    * [Janvier](/pages/2020_01/)
 - 2019
-    * [Décembre](/2019_12/)
-    * [Novembre](/2019_11/)
-    * [Octobre](/2019_10/)
-    * [Septembre](/2019_09/)
-    * [Juillet](/2019_07/)
-    * [Juin](/2019_06/)
-    * [Mai](/2019_05/)
-    * [Avril](/2019_04/)
-    * [Mars](/2019_03/)
+    * [Décembre](/pages/2019_12/)
+    * [Novembre](/pages/2019_11/)
+    * [Octobre](/pages/2019_10/)
+    * [Septembre](/pages/2019_09/)
+    * [Juillet](/pages/2019_07/)
+    * [Juin](/pages/2019_06/)
+    * [Mai](/pages/2019_05/)
+    * [Avril](/pages/2019_04/)
+    * [Mars](/pages/2019_03/)
