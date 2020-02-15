@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="/libs/katex/katex.min.css">
+     
+   <link rel="stylesheet" href="/libs/highlight/github.min.css">
+   
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/hypertext.css">
+  <link rel="icon" href="/assets/favicon.png">
+   <title>Mars 2020</title>  
+</head>
+<body>
+  <header>
+    <h1><a href="/">Nouvelles Julia</a></h1>
+    <nav>
+      <a href="/" class="current">Home</a>
+    | <a href="https://www.juliafran.org">JuliaFran</a>
+      <hr/>
+    </nav>
+  </header>
+
+<!-- Content appended here -->
+
+<div class="franklin-content">
+<h2 id="mars_2020"><a href="/2020_03/index.html#mars_2020">Mars 2020</a></h2>
+<p>Voici une sélection de vidéo, billet de blog ou packages que j&#39;ai repéré  le mois dernier:</p>
+<ul>
+<li><p>Je vous conseille de lire les <a href="https://docs.julialang.org/en/v1/manual/faq/">FAQ de la documentation officielle</a>. C&#39;est rapide et on y apprend plein de choses. Regarder la réponse à la question <em>What does &quot;type-stable&quot; mean?</em>, c&#39;est une erreur classique qui peut faire chuter les performances de votre code Julia.</p>
+</li>
+<li><p>Une <a href="https://t.co/A4lgyR3JKI">vidéo</a> du cours d&#39;Alan Edelman sur Julia et ses applications en machine learning et deep learning.</p>
+</li>
+<li><p><a href="https://juliadocs.github.io/Julia-Cheat-Sheet/">The Fast Track to Julia</a> un pense-bête qui peut servir. Dommage qu&#39;on ne puisse pas l&#39;imprimer à la manière des <a href="https://www.datacamp.com/community/data-science-cheatsheets">Datacamp cheat sheets</a>.</p>
+</li>
+<li><p><a href="https://nextjournal.com/DeepLearningNotes/">Hugh Murrell Deep Learning Notes</a> : Une série de de 10 articles sur l&#39;utilisation de Julia en Deep Learning. Cela démarre avec une introduction au langage puis la régression linéaire et cela monte progressivement jusqu&#39;au réseau de neurones.</p>
+</li>
+</ul>
+<ul>
+<li><p>Le package du mois: <a href="https://github.com/oschulz/ArraysOfArrays.jl">ArraysOfArrays.jl</a>.  Il permet de manipuler efficacement des collections de tableaux qui peuvent être de taille différente.</p>
+</li>
+<li><p>La nouvelle version de Julia 1.4 a un peu de retard, mais elle devrait réduire les temps de latence dus à la compilation des packages importés. Des progrès ont été faits grâce à <a href="https://github.com/JuliaLang/PackageCompiler.jl">PackageCompiler.jl</a>. Ce package permet notamment de créer des applications codées en Julia et de les exécuter sur des plateformes ou Julia n&#39;est pas installé.  À tester.</p>
+</li>
+<li><p><a href="https://white.ucc.asn.au/2020/02/09/whycompositionaljulia.html">JuliaLang: The Ingredients for a Composable Programming Language</a> une démonstration des avantages du <em>Multiple Dispatch</em> et du <em>Duck-typing</em>. Une occasion aussi de voir ce qui se cache derrière ces termes.</p>
+</li>
+<li><p>Un autre package: <a href="https://github.com/SimonEnsemble/Controlz.jl">Controlz.jl</a> <em>Simulation of simple controls problems in Julia</em>.  Je ne connais pas du tout ce domaine, mais j&#39;ai beaucoup aimé le soin avec lequel <a href="https://simonensemble.github.io/Controlz.jl/dev/">la documentation</a> a été construite.  Il y a beaucoup d&#39;idées à piquer si l’on souhaite insérer beaucoup d&#39;équations et d&#39;images dans sa documentation.</p>
+</li>
+<li><p><a href="https://julialang.org/blog/2017/03/piday/">Some fun with π in Julia</a> un article de 2017, en Julia c&#39;est vieux, mais tous ces exemples de code pour calculer π de différentes manières valent le détour:</p>
+</li>
+</ul>
+<pre><code class="language-julia-repl">julia> compute_pi(n) = reduce(+,map(x->4/(1+x^2),1/2n:1/n:1))/n
+p (generic function with 1 method)
+
+julia> compute_pi(10000)
+3.141592654423127</code></pre>
+<div class="page-foot">
+  <div class="copyright">
+    &copy; Pierre Navaro. Last modified: February 15, 2020. Website built with <a href="https://github.com/tlienart/Franklin.jl">Franklin.jl</a>.
+  </div>
+</div>
+
+</div>
+<!-- CONTENT ENDS HERE -->
+    
+        <script src="/libs/katex/katex.min.js"></script>
+<script src="/libs/katex/auto-render.min.js"></script>
+<script>renderMathInElement(document.body)</script>
+
+    
+    
+        <script src="/libs/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();hljs.configure({tabReplace: '    '});</script>
+
+    
+  </body>
+</html>
