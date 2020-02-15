@@ -7,7 +7,7 @@ Cette liste regroupe des développeurs francophones utilisateurs du langage Juli
 Si vous êtes intéressés, n’hésitez pas à vous abonner et à y poser
 vos questions.
 
-Je stocke ici les billets postés chaque moi et je les ai utilisé pour tester le
+Je stocke ici les billets postés chaque mois et je les ai utilisé pour tester le
 génerateur de pages html statiques [Franklin.jl](https://github.com/tlienart/Franklin.jl).
 
 Vous pouvez accéder à ce site en visitant cette [adresse](https://pnavaro.github.io/NouvellesJulia)
