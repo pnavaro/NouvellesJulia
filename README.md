@@ -19,7 +19,7 @@ le texte en markdown je fais:
 python3 markdown-to-email.py < pages/2020_03.md
 ```
 
-Le message s'ouvre dans Apple prêt à être envoyé.
+Le message s'ouvre dans Apple Mail prêt à être envoyé.
 
 
 Pierre
