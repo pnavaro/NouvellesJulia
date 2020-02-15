@@ -31,7 +31,7 @@ try:
 except ImportError:
     print('This script requires pygements and markdown to be installed.')
     print('Please:')
-    print('   pip install pygments markdown')
+    print('   pip install pygments markdown pymdown-extensions')
     sys.exit(0)
 
 # read in raw message content
