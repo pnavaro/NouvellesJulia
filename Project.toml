@@ -1,0 +1,5 @@
+[deps]
+Franklin = "713c75ef-9fc9-4b05-94a9-213340da978e"
+GR = "28b8d3ca-fb5f-59d9-8090-bfdbd6d07a71"
+Literate = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
+NodeJS = "2bd173c7-0d6d-553b-b6af-13a54713934c"
