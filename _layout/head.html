@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{if hasmath}} {{insert head_katex.html }}     {{end}}
+  {{if hascode}} {{insert head_highlight.html }}   {{end}}
+  <link rel="stylesheet" href="/css/franklin.css">
+  <link rel="stylesheet" href="/css/hypertext.css">
+  <link rel="icon" href="/assets/favicon.png">
+  {{isdef title}} <title>{{fill title}}</title>  {{end}}
+</head>
+<body>
+  <header>
+    <h1><a href="/">Nouvelles Julia</a></h1>
+    <nav>
+      <a href="/" class="current">Home</a>
+    | <a href="https://www.juliafran.org">JuliaFran</a>
+      <hr/>
+    </nav>
+  </header>
+
+<!-- Content appended here -->
