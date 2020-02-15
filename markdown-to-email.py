@@ -64,8 +64,11 @@ html_content = '<style type="text/css">'+css+'</style>'
 with open("three-balls.png", "rb") as image_file:
     encoded_string = (base64.b64encode(image_file.read())).decode("utf-8")
 
-html_content += '<img src="data:image/png;base64,'+encoded_string+'" />'
+#html_content += '<table width=80%><tr><td>'
+html_content += '<center><img align="center" src="data:image/png;base64,'+encoded_string+'" />'
+html_content += '</center>'
 html_content += markdown.markdown(content, extensions=['extra', 'codehilite', 'pymdownx.superfences'])
+#html_content += '</td><tr></table>'
 
 # create a multipart email message
 message = MIMEMultipart('alternative')
