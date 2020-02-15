@@ -7,9 +7,19 @@ Cette liste regroupe des développeurs francophones utilisateurs du langage Juli
 Si vous êtes intéressés, n’hésitez pas à vous abonner et à y poser
 vos questions.
 
-Je stocke ici les billets postés chaque mois et je les ai utilisé pour tester le
+J'ai utilisé ces billets pour tester le
 génerateur de pages html statiques [Franklin.jl](https://github.com/tlienart/Franklin.jl).
 
 Vous pouvez accéder à ce site en visitant cette [adresse](https://pnavaro.github.io/NouvellesJulia)
+
+Les billets sont envoyés à la liste en utilisant le script Python présent dans le dépôt. Pour envoyer
+le texte en markdown je fais:
+
+```bash
+python3 markdown-to-email.py < pages/2020_03.md
+```
+
+Le message s'ouvre dans Apple prêt à être envoyé.
+
 
 Pierre
