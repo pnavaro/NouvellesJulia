@@ -3,20 +3,13 @@
 '''
 Send an multipart email with HTML and plain text alternatives. The message
 should be constructed as a plain-text file of the following format:
-    
-    From: Your Name <your@email.com>
-    To: Recipient One <recipient@to.com>
-    Subject: Your subject line
-    ---
-    Markdown content here
 
 @copyright https://gist.github.com/cleverdevil/8250082
 
 The script accepts content from stdin and, by default, prints the raw
 generated email content to stdout.
 
-Preview your message on OS X by invoking the script with `-p` or 
-`--preview`, and it will open in your default mail client.
+It previews your message on OS X and it will open in your default mail client.
 
 '''
 
@@ -24,8 +17,6 @@ Preview your message on OS X by invoking the script with `-p` or
 import os
 import sys
 import json
-import argparse
-import smtplib
 import subprocess
 import datetime, locale
 import base64
@@ -40,16 +31,8 @@ try:
 except ImportError:
     print('This script requires pygements and markdown to be installed.')
     print('Please:')
-    print('   pip install pygments markdown')
+    print('   pip install pygments markdown pymdown-extensions')
     sys.exit(0)
-
-# define arguments
-parser = argparse.ArgumentParser(description='Format and send markdown-based emails.',
-                                 formatter_class=argparse.RawDescriptionHelpFormatter,
-                                 epilog=__doc__)
-parser.add_argument('-p', '--preview', action='store_true', 
-                    help='Preview the email in Apple Mail.')
-args = parser.parse_args()
 
 # read in raw message content
 content = sys.stdin.read()
@@ -86,8 +69,6 @@ message['Subject'] = f"Nouvelles Julia {month} {year}"
 message.attach(MIMEText(content, 'plain'))
 message.attach(MIMEText(html_content, 'html'))
 
-if args.preview:
-    open('/tmp/preview.eml', 'w').write(message.as_string())
-    os.system('open -a Mail /tmp/preview.eml')
-else:
-    print(message.as_string())
+open('/tmp/preview.eml', 'w').write(message.as_string())
+os.system('open -a Mail /tmp/preview.eml')
+
