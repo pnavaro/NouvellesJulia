@@ -28,6 +28,7 @@ from email.mime.image import MIMEImage
 try:
     import pygments
     import markdown as markdown
+    import pymdownx
 except ImportError:
     print('This script requires pygements and markdown to be installed.')
     print('Please:')
