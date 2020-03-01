@@ -36,7 +36,9 @@ except ImportError:
     sys.exit(0)
 
 # read in raw message content
-content = sys.stdin.read()
+content=""
+for line in filter( lambda line: not line.strip().startswith("@def"), sys.stdin.readlines()):
+	content += line
 
 # render the markdown into HTML 
 css = subprocess.check_output(['pygmentize', '-S', 'colorful', '-a', '.codehilite', '-f', 'html'])
