@@ -1,4 +1,4 @@
-![](three-balls.png)
+![](images/three-balls.png)
 # Nouvelles Julia
 
 Quelques liens et actualités sur le langage Julia séléctionnés chaque mois en francais.
