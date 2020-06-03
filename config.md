@@ -4,7 +4,7 @@ website.
 The website_* must be defined for the RSS to work
 ------------------------------------------------------->
 @def website_title = "Nouvelles Julia"
-@def website_descr = "Site web test avec Franklin"
+@def website_descr = "Lettre mensuelle sur le langage Julia"
 @def website_url   = "https://pnavaro.github.io/NouvellesJulia/"
 
 @def author = "Pierre Navaro"
