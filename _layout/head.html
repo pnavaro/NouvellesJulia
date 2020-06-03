@@ -5,21 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {{if hasmath}} {{insert head_katex.html }}     {{end}}
   {{if hascode}} {{insert head_highlight.html }}   {{end}}
-  <link rel="stylesheet" href="/css/franklin.css">
-  <link rel="stylesheet" href="/css/hypertext.css">
-  <link rel="icon" href="/assets/favicon.png">
+  {{insert style.html}}
   {{isdef title}} <title>{{fill title}}</title>  {{end}}
 </head>
 <body>
-  <header>
-    <img src="/assets/three-balls.png">
-    <h1><a href="/">Nouvelles Julia</a></h1>
-    <nav>
-      <a href="/NouvellesJulia" class="current">Home</a>
-    | <a href="https://www.juliafran.org">JuliaFran</a>
-    | <a href="https://github.com/pnavaro/NouvellesJulia">GitHub</a>
-      <hr/>
-    </nav>
-  </header>
+{{insert header.html}}
 
 <!-- Content appended here -->
