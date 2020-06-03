@@ -6,6 +6,7 @@ the config file by setting hasmath = false for instance and just setting it to t
 where appropriate -->
 
 - 2020
+    * [Juin](/pages/2020_06/)
     * [Mai](/pages/2020_05/)
     * [Avril](/pages/2020_04/)
     * [Mars](/pages/2020_03/)
