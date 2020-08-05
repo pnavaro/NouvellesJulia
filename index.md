@@ -3,6 +3,7 @@
 @def hascode = true
 
 - 2020
+    * [Août](/pages/2020_08/)
     * [Juillet](/pages/2020_07/)
     * [Juin](/pages/2020_06/)
     * [Mai](/pages/2020_05/)
