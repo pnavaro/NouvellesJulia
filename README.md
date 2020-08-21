@@ -14,6 +14,6 @@ Les billets sont envoyés à la liste en utilisant le script Python présent dan
 python3 markdown-to-email.py < pages/2020_03.md
 ```
 
-Le message s'ouvre dans Apple Mail prêt à être envoyé.
+Le message au format html s'ouvre dans Apple Mail prêt à être envoyé.
 
 Pierre
