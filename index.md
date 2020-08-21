@@ -8,7 +8,7 @@ Ces billets sont postés sur [la liste Julia du CNRS](https://listes.services.cn
 
 Pour vous abonnez:
 
-- Envoyez un message à <sympa@services.cnrs.fr> avec l'adresse à partir de laquelle vous souhaitez vous abonner.
+- Envoyez un message à sympa@services.cnrs.fr avec l'adresse à partir de laquelle vous souhaitez vous abonner.
 - En objet du message, écrivez : *subscribe julia VotrePrénom VotreNom*
 - Laissez le corps du message vide.
 
