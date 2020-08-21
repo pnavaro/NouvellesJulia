@@ -17,9 +17,8 @@ jobs:
             using Franklin;
             Pkg.activate("."); Pkg.instantiate();
             optimize()'  
-    - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@releases/v3
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3.6.1
       with:
-        ACCESS_TOKEN: ${{ secrets.FRANKLIN }}
-        BRANCH: gh-pages
-        FOLDER: __site
+        github_token: ${{ secrets.FRANKLIN }}
+        publish_dir: __site
