@@ -13,7 +13,7 @@ jobs:
         persist-credentials: false
     - run: julia --project -e '
             using Pkg; Pkg.instantiate();
-            using NodeJS; run(`$(npm_cmd()) install highlight.js`);
+            using NodeJS; run(`$(npm_cmd()) install -s highlight.js`);
             using Franklin; optimize()'  
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3.6.1
