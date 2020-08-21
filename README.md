@@ -8,7 +8,7 @@ J'ai utilisé ces billets pour tester le génerateur de pages html statiques [Fr
 
 Vous pouvez accéder à ce site en visitant cette [adresse](https://pnavaro.github.io/NouvellesJulia)
 
-Les billets sont envoyés à la liste en utilisant le script Python présent dans le dépôt. Pour envoyer le texte en markdown je fais:
+Les billets sont envoyés à la liste en utilisant le script Python présent dans le dépôt. Pour envoyer le texte en markdown je fais par exemple:
 
 ```bash
 python3 markdown-to-email.py < pages/2020_03.md
