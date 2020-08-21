@@ -2,6 +2,20 @@
 @def hasmath = true
 @def hascode = true
 
+Quelques liens et actualités sur le langage Julia séléctionnés chaque mois en francais.
+
+Ces billets sont postés sur [la liste Julia du CNRS](https://listes.services.cnrs.fr/wws/info/julia). Cette liste regroupe des développeurs francophones utilisateurs du langage Julia. Si vous êtes intéressés, n’hésitez pas à vous abonner et à y poser vos questions.
+
+Pour vous abonnez:
+
+- Envoyez un message à <sympa@services.cnrs.fr> avec l'adresse à partir de laquelle vous souhaitez vous abonner.
+- En objet du message, écrivez : *subscribe julia VotrePrénom VotreNom*
+- Laissez le corps du message vide.
+
+[Accès au dernier billet envoyé.](/pages/2020_08/)
+
+## Archives
+
 - 2019
   | 01
   | 02
