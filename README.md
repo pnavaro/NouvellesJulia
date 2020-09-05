@@ -1,6 +1,6 @@
 # Nouvelles Julia
 
-[![website](https://github.com/StateOfTheR/finistR2020/workflows/franklin/badge.svg)](https://pnavaro.github.io/NouvellesJulia/)
+[![website](https://github.com/pnavaro/NouvellesJulia/workflows/franklin/badge.svg)](https://pnavaro.github.io/NouvellesJulia/)
 
 
 Quelques liens et actualités sur le langage Julia séléctionnés chaque mois en francais.
