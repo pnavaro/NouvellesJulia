@@ -1,5 +1,8 @@
 # Nouvelles Julia
 
+[![website](https://github.com/StateOfTheR/finistR2020/workflows/franklin/badge.svg)](https://pnavaro.github.io/NouvellesJulia/)
+
+
 Quelques liens et actualités sur le langage Julia séléctionnés chaque mois en francais.
 
 Ces billets sont postés sur [la liste Julia du CNRS](https://listes.services.cnrs.fr/wws/subscribe/julia). Cette liste regroupe des développeurs francophones utilisateurs du langage Julia.  Si vous êtes intéressés, n’hésitez pas à vous abonner et à y poser vos questions.
