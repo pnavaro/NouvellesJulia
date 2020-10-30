@@ -12,7 +12,7 @@ Pour vous abonnez:
 - En objet du message, écrivez : *subscribe julia VotrePrénom VotreNom*
 - Laissez le corps du message vide.
 
-[Accès au dernier billet envoyé.](/pages/2020_10/)
+[Accès au dernier billet envoyé.](/pages/2020_11/)
 
 ## Archives
 
@@ -40,5 +40,5 @@ Pour vous abonnez:
   | [08](/pages/2020_08/)
   | [09](/pages/2020_09/)
   | [10](/pages/2020_10/) 
-  | 11 
+  | [11](/pages/2020_11/) 
   | 12 |
