@@ -1,4 +1,0 @@
-Sitemap: https://pnavaro.github.io/NouvellesJulia/sitemap.xml
-
-User-agent: *
-Disallow:
