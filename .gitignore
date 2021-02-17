@@ -1,4 +1,2 @@
-.markdown-to-email.py.swp
 *.swp
-Manifest.toml
-__site
+_build

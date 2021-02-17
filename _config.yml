@@ -1,0 +1,26 @@
+title: ""
+author: Pierre Navaro
+email: navaro@math.cnrs.fr
+logo: _assets/logo.png
+exclude_patterns: [pages/2021_03.md]
+
+execute:
+  execute_notebooks: force
+
+repository:
+  url: https://github.com/pnavaro/NouvellesJulia
+  branch: master  
+
+html:
+  use_issues_button: true
+  use_edit_page_button: true
+  use_repository_button: true
+
+parse:
+  myst_extended_syntax: true
+
+sphinx:
+    config:
+        language: "fr"
+        html_show_copyright: false
+        html_last_updated_fmt: "%d %b %Y"

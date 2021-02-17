@@ -1,21 +1,20 @@
 # Nouvelles Julia
 
-[![website](https://github.com/pnavaro/NouvellesJulia/workflows/franklin/badge.svg)](https://pnavaro.github.io/NouvellesJulia/)
+[![website](https://github.com/pnavaro/NouvellesJulia/workflows/jupyterbook/badge.svg)](https://pnavaro.github.io/NouvellesJulia/)
 
 Quelques liens et actualités sur le langage Julia séléctionnés chaque mois en francais.
 
 Ces billets sont postés sur [la liste Julia du CNRS](https://listes.services.cnrs.fr/wws/subscribe/julia). Cette liste regroupe des développeurs francophones utilisateurs du langage Julia.  Si vous êtes intéressés, n’hésitez pas à vous abonner et à y poser vos questions.
 
-J'ai utilisé ces billets pour tester le génerateur de pages html statiques [Franklin.jl](https://github.com/tlienart/Franklin.jl).
+Pour vous abonnez:
 
-Vous pouvez accéder à ce site en visitant cette [adresse](https://pnavaro.github.io/NouvellesJulia)
+- Envoyez un message à sympa@services.cnrs.fr avec l'adresse à partir de laquelle vous souhaitez vous abonner.
+- En objet du message, écrivez : *subscribe julia VotrePrénom VotreNom*
+- Laissez le corps du message vide.
 
 Les billets sont envoyés à la liste en utilisant le script Python présent dans le dépôt. Pour envoyer le texte en markdown je fais par exemple:
 
 ```bash
 python3 markdown-to-email.py < pages/2020_03.md
 ```
-
 Le message au format html s'ouvre dans Apple Mail prêt à être envoyé.
-
-Pierre
