@@ -15,6 +15,9 @@ html:
   use_issues_button: true
   use_edit_page_button: true
   use_repository_button: true
+  comments:
+    utterances:
+      repo: "pnavaro/NouvellesJulia"
 
 parse:
   myst_extended_syntax: true
