@@ -2,6 +2,7 @@
 
 - part: 2021
   chapters:
+  - file: 'pages/2021_03'
   - file: 'pages/2021_02'
   - file: 'pages/2021_01'
 
