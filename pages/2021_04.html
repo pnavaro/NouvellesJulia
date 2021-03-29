@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juin 2020</title>
+    <title>Avril 2021</title>
     
   <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -89,8 +89,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Mai 2020" href="2020_05.html" />
-    <link rel="prev" title="Juillet 2020" href="2020_07.html" />
+    <link rel="next" title="Mars 2021" href="2021_03.html" />
+    <link rel="prev" title="Nouvelles Julia" href="../README.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -123,9 +123,9 @@ commentsRunWhenDOMLoaded(addUtterances);
   2021
  </span>
 </p>
-<ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="2021_04.html">
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Avril 2021
   </a>
  </li>
@@ -150,7 +150,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   2020
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1">
   <a class="reference internal" href="2020_12.html">
    Décembre 2020
@@ -181,8 +181,8 @@ commentsRunWhenDOMLoaded(addUtterances);
    Juillet 2020
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="2020_06.html">
    Juin 2020
   </a>
  </li>
@@ -303,7 +303,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/pages/2020_06.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/pages/2021_04.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -323,7 +323,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
                     class="fab fa-github"></i>dépôt</button></a>
         
-        <a class="edit-button" href="https://github.com/pnavaro/NouvellesJulia/edit/master/pages/2020_06.md"><button
+        <a class="edit-button" href="https://github.com/pnavaro/NouvellesJulia/edit/master/pages/2021_04.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Modifier cette page"><i class="fas fa-pencil-alt"></i>suggestion de modification</button></a>
     </div>
@@ -355,13 +355,13 @@ commentsRunWhenDOMLoaded(addUtterances);
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#video">
-   Vidéo
+  <a class="reference internal nav-link" href="#packages">
+   Packages
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#packages">
-   Packages
+  <a class="reference internal nav-link" href="#videos">
+   Vidéos
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -386,70 +386,79 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="juin-2020">
-<h1>Juin 2020<a class="headerlink" href="#juin-2020" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Julia est dans sa version 1.4.2 depuis quelques jours. La version 1.5 est en route avec quelques <a class="reference external" href="https://docs.julialang.org/en/v1.5-dev/NEWS/">nouveautés</a>. Des nouvelles très « data science » ce mois-ci.</p>
+  <div class="section" id="avril-2021">
+<h1>Avril 2021<a class="headerlink" href="#avril-2021" title="Lien permanent vers ce titre">¶</a></h1>
+<p>La version 1.6 de Julia est sortie accompagnée d’un billet de blog:</p>
+<p><a class="reference external" href="https://julialang.org/blog/2021/03/julia-1.6-highlights/">Julia 1.6 Highlights</a></p>
+<p>Abel Siquiera propose un outil d’installation pour linux pour faire la mise à jour : <a class="reference external" href="https://github.com/abelsiqueira/jill">jill</a>.</p>
+<p>La progression la plus agréable est le fameux temps du premier plot, divisée par 2 sur mon poste :</p>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="k">using</span> <span class="n">Plots</span>
+  <span class="mf">3.711483</span> <span class="n">seconds</span> <span class="p">(</span><span class="mf">6.53</span> <span class="n">M</span> <span class="n">allocations</span><span class="o">:</span> <span class="mf">477.289</span> <span class="n">MiB</span><span class="p">,</span> <span class="mf">3.80</span><span class="o">%</span> <span class="n">gc</span> <span class="n">time</span><span class="p">,</span> <span class="mf">0.11</span><span class="o">%</span> <span class="n">compilation</span> <span class="n">time</span><span class="p">)</span>
+
+<span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="n">display</span><span class="p">(</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="n">LinRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="nb">π</span><span class="p">,</span><span class="mi">100</span><span class="p">))))</span>
+  <span class="mf">7.566719</span> <span class="n">seconds</span> <span class="p">(</span><span class="mf">10.80</span> <span class="n">M</span> <span class="n">allocations</span><span class="o">:</span> <span class="mf">623.809</span> <span class="n">MiB</span><span class="p">,</span> <span class="mf">3.41</span><span class="o">%</span> <span class="n">gc</span> <span class="n">time</span><span class="p">,</span> <span class="mf">20.58</span><span class="o">%</span> <span class="n">compilation</span> <span class="n">time</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Notez ici que la macro &#64;time donne maintenant le temps pris par la compilation.
+Un truc que j’utilise pour aller plus vite, j’importe seulement le package <code class="docutils literal notranslate"><span class="pre">GR</span></code>:</p>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="k">using</span> <span class="n">GR</span>
+  <span class="mf">0.146360</span> <span class="n">seconds</span> <span class="p">(</span><span class="mf">58.95</span> <span class="n">k</span> <span class="n">allocations</span><span class="o">:</span> <span class="mf">5.140</span> <span class="n">MiB</span><span class="p">,</span> <span class="mf">2.40</span><span class="o">%</span> <span class="n">compilation</span> <span class="n">time</span><span class="p">)</span>
+
+<span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="n">display</span><span class="p">(</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="n">LinRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="nb">π</span><span class="p">,</span><span class="mi">100</span><span class="p">))))</span>
+<span class="nb">nothing</span>
+  <span class="mf">0.858617</span> <span class="n">seconds</span> <span class="p">(</span><span class="mf">698.25</span> <span class="n">k</span> <span class="n">allocations</span><span class="o">:</span> <span class="mf">41.780</span> <span class="n">MiB</span><span class="p">,</span> <span class="mf">1.52</span><span class="o">%</span> <span class="n">gc</span> <span class="n">time</span><span class="p">,</span> <span class="mf">89.03</span><span class="o">%</span> <span class="n">compilation</span> <span class="n">time</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>La fonction <code class="docutils literal notranslate"><span class="pre">plot</span></code> est moins « générique » cependant…</p>
 <div class="section" id="billets-de-blog">
 <h2>Billets de blog<a class="headerlink" href="#billets-de-blog" title="Lien permanent vers ce titre">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://medium.com/&#64;kimfung/deploying-julia-projects-on-heroku-com-eb8da5248134">Deploying Julia projects on Heroku.com</a>: Article en ligne sur le déploiement d’une application Julia sur le service <a class="reference external" href="https://www.heroku.com/free">Heroku</a>. Les tableaux de bord déployés sur ce service sont souvent liés à l’analyse et la visualisation de données.</p></li>
-<li><p><a class="reference external" href="https://bkamins.github.io/julialang/2020/05/11/package-version-restrictions.html">Understanding package version restrictions in Julia</a>: Article pour comprendre ce qui se cache dans les fichiers <code class="docutils literal notranslate"><span class="pre">Project.toml</span></code> et <code class="docutils literal notranslate"><span class="pre">Manifest.toml</span></code>.</p></li>
-</ul>
-</div>
-<div class="section" id="video">
-<h2>Vidéo<a class="headerlink" href="#video" title="Lien permanent vers ce titre">¶</a></h2>
-<ul class="simple">
-<li><p>Une interview de deux des créateurs de Julia: <a class="reference external" href="https://t.co/kv5hBqs9BN">Jeff Bezancon et Viral B Shah</a></p></li>
-<li><p>Une série de vidéos assez courtes sur des exemples d’utilisation de Julia en apprentissage statistique. Voici le lien vers les <a class="reference external" href="https://github.com/JuliaAcademy/DataScience">notebooks</a>:</p>
+<li><p><a class="reference external" href="https://mdneuzerling.com/post/machine-learning-workflows-with-julia/">Machine learning workflows with julia</a> : Exemple d’utilisation du package <a class="reference external" href="https://github.com/alan-turing-institute/MLJ.jl">MLJ.jl</a> qui propose une interface commune à un grand nombre de modèles d’apprentissage statistique.</p></li>
+<li><p><a class="reference external" href="https://bkamins.github.io/julialang/2021/02/19/binding.html">How do loops in Julia handle local variables?</a> : L’impact de la portée des variables sur la clarté et la performance.</p></li>
+<li><p>Un nouveau recueil de nouvelles a été créé le mois dernier <a class="reference external" href="https://www.juliafordatascience.com">Julia for Data Science</a>. Le premier billet concerne l’installation :</p>
 <ul>
-<li><p><a class="reference external" href="https://youtu.be/AXgLWumAOhk">Julia for Data Science - Video 0</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/iG1dZBaxS-U">Julia for Data Science - Video 1</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/bndXPsRHPg0">Julia for Data Science - Video 2</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/AAGxWEJ_eWk">Julia for Data Science - Video 3</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/hIsYy04zO7U">Julia for Data Science - Video 4</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/cwurgt7cn5s">Julia for Data Science - Video 5</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/OQRPeIQasdo">Julia for Data Science - Video 6</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/5TCbIK_cpZE">Julia for Data Science - Video 7</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/1AgFyLpM3_4">Julia for Data Science - Video 8</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/7b9b6glGnjA">Julia for Data Science - Video 9</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/Oxi0Pfmskus">Julia for Data Science - Video 10</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/3DYJiAgApdk">Julia for Data Science - Video 11</a></p></li>
-<li><p><a class="reference external" href="https://youtu.be/-XvtUiNrCYM">Julia for Data Science - Video 12</a></p></li>
+<li><p><a class="reference external" href="https://www.juliafordatascience.com/setting-up-julia-for-data-science/">Setting Up Julia for Data Science</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference external" href="https://youtu.be/9soe36Hqq3Y">GPU Programming in Julia</a>: Webinaire très intéressant sur la programmation CUDA en Julia. Attention, le package <code class="docutils literal notranslate"><span class="pre">CuArrays.jl</span></code> présenté dans la vidéo a été remplacé il y a quelques jours par le package <a class="reference external" href="https://github.com/JuliaGPU/CUDA.jl">CUDA.jl</a>. La documentation a beaucoup progressé. La facilité avec laquelle on peut porter des applications sur GPU est une grande force du langage.</p></li>
+<li><p><a class="reference external" href="https://opensourc.es/blog/benchmarking-and-profiling-julia-code/">Benchmarking and Profiling Julia Code</a> : Une bonne revue de tous les outils existants. J’aime beaucoup le package <a class="reference external" href="https://github.com/KristofferC/TimerOutputs.jl">TimerOutputs.jl</a> et j’aimerais savoir utiliser <a class="reference external" href="https://github.com/JuliaDebug/Cthulhu.jl">Cthulhu.jl</a>.</p></li>
+<li><p><a class="reference external" href="https://notamonadtutorial.com/modeling-complexity-with-symbolics-jl-and-modelingtoolkit-jl-df923129996b">Modeling complexity with Symbolics.jl and ModelingToolkit.jl</a> : Interview de Chris Rackauckas sur son nouveau projet de calcul symbolique en Julia.</p></li>
+<li><p><a class="reference external" href="https://giggleliu.github.io/notebooks/tropical/tropicaltensornetwork.html">Tropical tensor networks for solving combinatoric optimization problems efficiently</a> : Joli notebook Pluto.</p></li>
 </ul>
 </div>
 <div class="section" id="packages">
 <h2>Packages<a class="headerlink" href="#packages" title="Lien permanent vers ce titre">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://pydatablog.github.io/ParallelKMeans.jl/stable/">ParallelKMeans.jl</a> : Implémentation julia de la méthode bien connue, mais parfois décevante d’apprentissage non supervisée. L’algorithme n’est pas très compliqué, mais ce qui est intéressant dans ce package c’est la gestion du parallélisme avec des threads. Selon les benchmarks, les performances sont impressionnantes.</p></li>
-<li><p><a class="reference external" href="https://github.com/zsteve/OptimalTransport.jl">OptimalTransport.jl</a> : Version Julia de l’excellent package Python <a class="reference external" href="https://github.com/PythonOT/POT">POT</a> dont beaucoup de développeurs sont francais. Attention ce package n’a que quelques semaines, ce n’est que le début d’une bonne initiative.</p></li>
-<li><p><a class="reference external" href="https://github.com/ianshmean/SystemBenchmark.jl">SystemBenchmark.jl</a>: Si vous voulez comparer les performances de votre dernier portable avec le vieux serveur de calcul du labo, c’est le package qu’il vous faut.</p></li>
-<li><p><a class="reference external" href="https://github.com/Arkoniak/UrlDownload.jl">UrlDownload.jl</a> : Package utile pour télécharger des fichiers avec une barre de progression et il peut éventuellement convertir le résultat vers le bon format (DataFrame, Image, …).</p></li>
+<li><p><a class="reference external" href="https://github.com/JuliaLinearAlgebra/Octavian.jl">Octavian.jl</a> : Multi-threaded BLAS-like library that provides pure Julia matrix multiplication.</p></li>
+<li><p><a class="reference external" href="https://github.com/IgorKohan/NormalHermiteSplines.jl">NormalHermiteSplines.jl</a> : Multivariate Normal Hermite-Birkhoff Interpolating Splines in Julia</p></li>
+<li><p><a class="reference external" href="https://github.com/JuliaSymbolics/Symbolics.jl">Symbolics.jl</a> : A fast and modern Computer Algebra System (CAS) for a fast and modern language.</p></li>
+<li><p><a class="reference external" href="https://github.com/dpsanders/ReversePropagation.jl">ReversePropagation.jl</a> : A Julia package for reverse propagation along a syntax tree, using source-to-source transformation via <a class="reference external" href="https://github.com/JuliaSymbolics/Symbolics.jl">Symbolics.jl</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="videos">
+<h2>Vidéos<a class="headerlink" href="#videos" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/Vi4Ntd_Vf4A">How to Setup GitHub Actions for a Julia Package</a>. Ca marche tellement bien que cela devient de plus en plus difficile de ne pas choisir GitHub pour héberger son package.</p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/playlist?list=PLP8iPy9hna6TxktMt-IzdU2vQpGp3bwDn">Julia SciML Symposium, SIAM CSE 2021</a> : 9 vidéos de 15 minutes sur l’utilisation de l’ecosystème <a class="reference external" href="https://sciml.ai">Julia SciMIL</a> (Scientific Machine Learning).</p></li>
+<li><p><a class="reference external" href="https://youtu.be/oxvdl-ztxPA">Julia: Solving ODEs with Euler, RK4, and DifferentialEquations</a> : Vidéo de 10 minutes.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/xTLFz-5a5Ec">Julia: Parallel computing revisited</a> : Vidéo d’une heure sur l’utilisation de julia sur un serveur HPC.</p></li>
 </ul>
 </div>
 <div class="section" id="tutoriels-et-documentation">
 <h2>Tutoriels et documentation<a class="headerlink" href="#tutoriels-et-documentation" title="Lien permanent vers ce titre">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/tirthajyoti/Julia-data-science">Data science with Julia</a> : Série de notebooks bien faits sur la manipulation des tableaux et l’algèbre linéaire en Julia. Très peu de « data science » finalement. Je pense que ces supports sont particulièrement bien adaptés aux débutants venant de R, Python ou MATLAB.</p></li>
-<li><p><a class="reference external" href="https://github.com/deepaksuresh/Julia-for-data-science">Julia for Data Science</a> :  Deux notebooks dans ce dépôt. Un premier sur le package <a class="reference external" href="https://github.com/JuliaData/DataFrames.jl">DataFrames.jl</a>. Un deuxième notebook sur le chargement parallèle de fichiers CSV. L’intérêt de ce travail est de comparer les performances avec R et Python.</p></li>
+<li><p><a class="reference external" href="https://datasciencejuliahackers.com">Data Science in Julia for Hackers</a> : Livre en cours d’écriture à base notebooks Pluto. A suivre.</p></li>
+<li><p><a class="reference external" href="https://jaantollander.com/post/how-to-create-software-packages-with-julia-language/">How to Create Software Packages with Julia Language</a> : Document accompagnant la vidéo mentionnée plus haut sur les GitHub actions.</p></li>
+<li><p><a class="reference external" href="https://documentation.divio.com">The documentation system</a> : Je conseille vivement ce site, qui n’est pas spécifique à Julia, qui explique comment construire une bonne documentation. Très instructif.</p></li>
+<li><p><a class="reference external" href="https://github.com/staticfloat/2021-03-17-parallelization-tutorial">Parallelization tutorial</a> : Tutoriel sur la parallélisation en Julia appliquée à la science des données par Elliot Saba.</p></li>
+<li><p><a class="reference external" href="https://github.com/ahbarnett/multilingual-julia">Multilingual Julia</a> : Série d’exemples complets d’interaction de Julia avec des programmes écrits en Fortran ou en C.</p></li>
 </ul>
 </div>
 <div class="section" id="divers">
 <h2>Divers<a class="headerlink" href="#divers" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Vous pouvez vous inscrire à la conférence <a class="reference external" href="https://juliacon.org/2020/tickets/">JuliaCon 2020</a> qui aura lieu en ligne à la fin du mois de juillet. Attention l’inscription est gratuite, mais obligatoire.</p>
-<p>L’IDE <a class="reference external" href="https://junolab.org">Juno</a> va <a class="reference external" href="https://discourse.julialang.org/t/ann-juno-0-12-5/39744?u=aviatesk">migrer progressivement d’Atom vers VSCode</a>. Personnellement je n’ai jamais été convaincu par ce logiciel. Peut être qu’avec VSCODE ce sera mieux, <a class="reference external" href="https://pbpython.com/notebook-alternative.html">l’alternative à Jupyter</a> est pas mal.</p>
-<p>Voter pour le <a class="reference external" href="https://discourse.julialang.org/t/nominate-for-the-julia-community-prize-2020/40263">Julia Community Prize Nominations 2020</a> pour récompenser le développeur de votre package préféré. Vous ne pourrez pas voter pour les anciens lauréats que je liste ci-dessous, et que je conseille de suivre sur GitHub:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/xorJane">Jane Herriman</a></p></li>
-<li><p><a class="reference external" href="https://github.com/quinnj">Jacob Quinn</a></p></li>
-<li><p><a class="reference external" href="https://github.com/MikeInnes">Mike Innes</a></p></li>
-<li><p><a class="reference external" href="https://github.com/maleadt">Tim Besard</a></p></li>
-<li><p><a class="reference external" href="https://github.com/kshyatt">Katharine Hyatt</a></p></li>
-<li><p><a class="reference external" href="https://github.com/ChrisRackauckas">Chris Rackauckas</a></p></li>
-<li><p><a class="reference external" href="https://github.com/staticfloat">Elliott Saba</a></p></li>
-</ul>
+<p>Ne manquez pas le prochain <a class="reference external" href="https://calcul.math.cnrs.fr/2021-04-cafe-julia.html">Café Calcul</a> avec François Févotte : « Pourquoi Julia ? ». L’accès est libre mais vous devez vous inscrire pour recevoir le lien vers la visio.</p>
+<p>La conférence en ligne <a class="reference external" href="https://plutojl.org/plutocon2021">PlutoCon 2021</a> aura lieu les 8 et 9 avril. Ca commence à 18:00 mais toutes les vidéos seront disponibles ensuite sur YT.</p>
+<p>Portez-vous bien.</p>
+<p>Pierre</p>
 </div>
 </div>
 
@@ -478,8 +487,8 @@ commentsRunWhenDOMLoaded(addUtterances);
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="2020_07.html" title="previous page">Juillet 2020</a>
-    <a class='right-next' id="next-link" href="2020_05.html" title="next page">Mai 2020</a>
+    <a class='left-prev' id="prev-link" href="../README.html" title="previous page">Nouvelles Julia</a>
+    <a class='right-next' id="next-link" href="2021_03.html" title="next page">Mars 2021</a>
 
         </div>
         
