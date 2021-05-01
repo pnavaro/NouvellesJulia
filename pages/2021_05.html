@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Septembre 2020</title>
+    <title>Mai 2021</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -86,8 +86,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Août 2020" href="2020_08.html" />
-    <link rel="prev" title="Octobre 2020" href="2020_10.html" />
+    <link rel="next" title="Avril 2021" href="2021_04.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -116,8 +115,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="2021_05.html">
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
    Mai 2021
   </a>
  </li>
@@ -154,7 +153,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   2020
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="2020_12.html">
    Décembre 2020
@@ -170,8 +169,8 @@ commentsRunWhenDOMLoaded(addUtterances);
    Octobre 2020
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="2020_09.html">
    Septembre 2020
   </a>
  </li>
@@ -308,7 +307,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/pages/2020_09.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/pages/2021_05.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -328,7 +327,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
                     class="fab fa-github"></i>dépôt</button></a>
         
-        <a class="edit-button" href="https://github.com/pnavaro/NouvellesJulia/edit/master/pages/2020_09.md"><button
+        <a class="edit-button" href="https://github.com/pnavaro/NouvellesJulia/edit/master/pages/2021_05.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Modifier cette page"><i class="fas fa-pencil-alt"></i>suggestion de modification</button></a>
     </div>
@@ -377,6 +376,8 @@ commentsRunWhenDOMLoaded(addUtterances);
   <a class="reference internal nav-link" href="#divers">
    Divers
   </a>
+  <ul class="nav section-nav flex-column">
+  </ul>
  </li>
 </ul>
 
@@ -389,64 +390,32 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="septembre-2020">
-<h1>Septembre 2020<a class="headerlink" href="#septembre-2020" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Bonjour à tous, voici quelques liens pour suivre l’actualité du langage Julia.</p>
+  <div class="section" id="mai-2021">
+<h1>Mai 2021<a class="headerlink" href="#mai-2021" title="Lien permanent vers ce titre">¶</a></h1>
+<p>La version actuelle Julia est 1.6.1</p>
 <div class="section" id="billets-de-blog">
 <h2>Billets de blog<a class="headerlink" href="#billets-de-blog" title="Lien permanent vers ce titre">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://opensourc.es/blog/javis-beginning/">The beginning of Javis.jl</a>: Javis signifie “Julia Mathematical visualizations and animations”.</p></li>
-<li><p><a class="reference external" href="https://hackernoon.com/the-meaning-of-functions-in-julia-ix1u3u1p">The Meaning of Functions in Julia</a>: Billet très intéressant sur le fonctionnement des fonctions, des méthodes et de la surcharge en Julia.</p></li>
-<li><p><a class="reference external" href="https://www.stochasticlifestyle.com/gpu-accelerated-ode-solving-in-r-with-julia-the-language-of-libraries/">GPU-Accelerated ODE Solving in R with Julia, the Language of Libraries</a>: C’est une bonne idée d’offrir aux utilisateurs R la puissance du package DifferentialEquations.jl. Cependant j’ai testé et j’ai beaucoup de problèmes avec le package R <a class="reference external" href="https://github.com/Non-Contradiction/JuliaCall">JuliaCall</a> sur lequel repose <a class="reference external" href="https://github.com/SciML/diffeqr">diffeqr</a>. En revanche le package <a class="reference external" href="https://github.com/JuliaInterop/RCall.jl">RCall.jl</a> fonctionne très bien et c’est très pratique lorsque l’on veut traduire du R en Julia ;-)</p></li>
-<li><p><a class="reference external" href="https://julialang.org/blog/2020/08/invalidations/">Analyzing sources of compiler latency in Julia: method invalidations</a>: Les développeurs de Julia progressent sur le problème de la lattence. Ce premier plot qu’on attend et la compilation interminable de DifferentialEquations restent des freins à l’utilisation de Julia. Jeff Bezanson et son équipe l’ont bien compris.</p></li>
-</ul>
 </div>
 <div class="section" id="packages">
 <h2>Packages<a class="headerlink" href="#packages" title="Lien permanent vers ce titre">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/scheinerman/LinearAlgebraX.jl">LinearAlgebraX</a>: Pour faire de l’algèbre linéaire avec des rationnels.</p></li>
-</ul>
 </div>
 <div class="section" id="videos">
 <h2>Vidéos<a class="headerlink" href="#videos" title="Lien permanent vers ce titre">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://youtu.be/OICGfxAm5tQ">Démonstration de TypeProfiler.jl</a> La vidéo ne dure que 71 secondes mais elle est intéressante. On peut se permettre de la regarder deux ou trois fois pour voir ce qui se passe.</p></li>
-<li><p><a class="reference external" href="https://youtu.be/mWAiCI43nqA">Julia - Innovation starts at the Bottom of the Stack</a>: Interview de 2 heures de Viral Shah et Keno Fischer qui sont directeur général (CEO) et directeur technique (CTO) de Julia computing.</p></li>
-</ul>
 </div>
 <div class="section" id="tutoriels-et-documentation">
 <h2>Tutoriels et documentation<a class="headerlink" href="#tutoriels-et-documentation" title="Lien permanent vers ce titre">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://juliabyexample.helpmanual.io">Julia by example</a> : Tutoriel rapide et efficace. Jetez un oeil sur <a class="reference external" href="https://github.com/samuelcolvin/JuliaByExample/">le dépôt</a> pour voir comment est généré la page web. C’est du Python mais c’est bien fait.</p></li>
-<li><p><a class="reference external" href="https://github.com/Emmanuel-R8/Presentation_HKML_2020_04">Presentation of the Julia programming language at the April 2020 Hong Kong Machine Learning Meetup</a>. Les <a class="reference external" href="https://github.com/Emmanuel-R8/Presentation_HKML_2020_04/blob/master/HKML_Julia_Xarrigan_2020_04_29.pdf">transparents</a> sont beaux et il y a des exemples intéressants dont on peut s’inspirer. Vous pouvez les parcourir en deux minutes.</p></li>
-<li><p><a class="reference external" href="https://youtu.be/DGojI9xcCfg">Working with images in Julia</a>: Un des seuls effets positifs du confinement aux USA, les cours du MIT sont en ligne et on y utilise le langage Julia. Voici la première vidéo sur le traitement d’image. Je vais essayer de suivre les diffusions et je vous envoie les liens le mois prochain.</p></li>
-</ul>
 </div>
 <div class="section" id="divers">
 <h2>Divers<a class="headerlink" href="#divers" title="Lien permanent vers ce titre">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/julia-actions/setup-julia">GitHub actions</a> : Je vous conseille d’utiliser les GitHub actions pour tester vos programmes Julia. La procédure est assez simple. Sachez que Julia est installé par défaut sur les runners et que le fichier de “workflow” peut être très simple:</p></li>
-</ul>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CI</span>
-<span class="nt">on</span><span class="p">:</span>
-  <span class="nt">push</span><span class="p">:</span>
-    <span class="nt">branches</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">master</span>
-<span class="nt">jobs</span><span class="p">:</span>
-  <span class="nt">test</span><span class="p">:</span>
-    <span class="nt">runs-on</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
-    <span class="nt">steps</span><span class="p">:</span>
-    <span class="p p-Indicator">-</span> <span class="nt">name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">Checkout</span>
-      <span class="nt">uses</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">actions/checkout@v2</span>
-    <span class="p p-Indicator">-</span> <span class="nt">run</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">julia --project -e &#39;using Pkg; Pkg.instantiate(); Pkg.test()&#39;</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/mossr/Tetris.jl">Tetris</a> : Pourquoi pas ? ca marche en plus :-)</p></li>
-</ul>
-<p>La version 1.5.1 de Julia est sortie. Pensez à faire une mise à jour.</p>
-<p>Je vous souhaite une très bonne rentrée.</p>
+<p>Portez-vous bien.</p>
 <p>Pierre</p>
+<p><a class="reference external" href="https://listes.services.cnrs.fr/wws/subscribe/julia"><em>Abonnez-vous à la liste Julia du CNRS</em></a></p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 </div>
 
@@ -475,8 +444,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         
         <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="2020_10.html" title="previous page">Octobre 2020</a>
-    <a class='right-next' id="next-link" href="2020_08.html" title="next page">Août 2020</a>
+    <a class='right-next' id="next-link" href="2021_04.html" title="next page">Avril 2021</a>
 
         </div>
         
