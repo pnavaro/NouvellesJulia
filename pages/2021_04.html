@@ -117,8 +117,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="2021_05.html">
-   Mai 2021
+  <a class="reference internal" href="2021_06.html">
+   Juin 2021
   </a>
  </li>
 </ul>
@@ -128,6 +128,11 @@ commentsRunWhenDOMLoaded(addUtterances);
  </span>
 </p>
 <ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="2021_05.html">
+   Mai 2021
+  </a>
+ </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Avril 2021
@@ -398,7 +403,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="k">using</span> <span class="n">Plots</span>
   <span class="mf">3.711483</span> <span class="n">seconds</span> <span class="p">(</span><span class="mf">6.53</span> <span class="n">M</span> <span class="n">allocations</span><span class="o">:</span> <span class="mf">477.289</span> <span class="n">MiB</span><span class="p">,</span> <span class="mf">3.80</span><span class="o">%</span> <span class="n">gc</span> <span class="n">time</span><span class="p">,</span> <span class="mf">0.11</span><span class="o">%</span> <span class="n">compilation</span> <span class="n">time</span><span class="p">)</span>
 
-<span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="n">display</span><span class="p">(</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="n">LinRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="nb">π</span><span class="p">,</span><span class="mi">100</span><span class="p">))))</span>
+<span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="n">display</span><span class="p">(</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="kt">LinRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="nb">π</span><span class="p">,</span><span class="mi">100</span><span class="p">))))</span>
   <span class="mf">7.566719</span> <span class="n">seconds</span> <span class="p">(</span><span class="mf">10.80</span> <span class="n">M</span> <span class="n">allocations</span><span class="o">:</span> <span class="mf">623.809</span> <span class="n">MiB</span><span class="p">,</span> <span class="mf">3.41</span><span class="o">%</span> <span class="n">gc</span> <span class="n">time</span><span class="p">,</span> <span class="mf">20.58</span><span class="o">%</span> <span class="n">compilation</span> <span class="n">time</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -407,7 +412,7 @@ Un truc que j’utilise pour aller plus vite, j’importe seulement le package <
 <div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="k">using</span> <span class="n">GR</span>
   <span class="mf">0.146360</span> <span class="n">seconds</span> <span class="p">(</span><span class="mf">58.95</span> <span class="n">k</span> <span class="n">allocations</span><span class="o">:</span> <span class="mf">5.140</span> <span class="n">MiB</span><span class="p">,</span> <span class="mf">2.40</span><span class="o">%</span> <span class="n">compilation</span> <span class="n">time</span><span class="p">)</span>
 
-<span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="n">display</span><span class="p">(</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="n">LinRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="nb">π</span><span class="p">,</span><span class="mi">100</span><span class="p">))))</span>
+<span class="n">julia</span><span class="o">&gt;</span> <span class="nd">@time</span> <span class="n">display</span><span class="p">(</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="kt">LinRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="nb">π</span><span class="p">,</span><span class="mi">100</span><span class="p">))))</span>
 <span class="nb">nothing</span>
   <span class="mf">0.858617</span> <span class="n">seconds</span> <span class="p">(</span><span class="mf">698.25</span> <span class="n">k</span> <span class="n">allocations</span><span class="o">:</span> <span class="mf">41.780</span> <span class="n">MiB</span><span class="p">,</span> <span class="mf">1.52</span><span class="o">%</span> <span class="n">gc</span> <span class="n">time</span><span class="p">,</span> <span class="mf">89.03</span><span class="o">%</span> <span class="n">compilation</span> <span class="n">time</span><span class="p">)</span>
 </pre></div>
@@ -504,7 +509,7 @@ Un truc que j’utilise pour aller plus vite, j’importe seulement le package <
         
           Par Pierre Navaro<br/>
         
-          Dernière mise à jour le 03 mai 2021.<br/>
+          Dernière mise à jour le 01 juin 2021.<br/>
       </p>
     </div>
   </footer>
