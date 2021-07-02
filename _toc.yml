@@ -1,37 +1,36 @@
-- file: 'pages/2021_07'
-
-- part: 2021
+format: jb-book
+root: pages/2021_07
+parts:
+- caption: '2021'
   chapters:
-  - file: 'pages/2021_06'
-  - file: 'pages/2021_05'
-  - file: 'pages/2021_04'
-  - file: 'pages/2021_03'
-  - file: 'pages/2021_02'
-  - file: 'pages/2021_01'
-
-- part: 2020
+  - file: pages/2021_06
+  - file: pages/2021_05
+  - file: pages/2021_04
+  - file: pages/2021_03
+  - file: pages/2021_02
+  - file: pages/2021_01
+- caption: '2020'
   chapters:
-  - file: 'pages/2020_12'
-  - file: 'pages/2020_11'
-  - file: 'pages/2020_10'
-  - file: 'pages/2020_09'
-  - file: 'pages/2020_08'
-  - file: 'pages/2020_07'
-  - file: 'pages/2020_06'
-  - file: 'pages/2020_05'
-  - file: 'pages/2020_04'
-  - file: 'pages/2020_03'
-  - file: 'pages/2020_02'
-  - file: 'pages/2020_01'
-
-- part: 2019
+  - file: pages/2020_12
+  - file: pages/2020_11
+  - file: pages/2020_10
+  - file: pages/2020_09
+  - file: pages/2020_08
+  - file: pages/2020_07
+  - file: pages/2020_06
+  - file: pages/2020_05
+  - file: pages/2020_04
+  - file: pages/2020_03
+  - file: pages/2020_02
+  - file: pages/2020_01
+- caption: '2019'
   chapters:
-  - file: 'pages/2019_12'
-  - file: 'pages/2019_11'
-  - file: 'pages/2019_10'
-  - file: 'pages/2019_09'
-  - file: 'pages/2019_07'
-  - file: 'pages/2019_06'
-  - file: 'pages/2019_05'
-  - file: 'pages/2019_04'
-  - file: 'pages/2019_03'
+  - file: pages/2019_12
+  - file: pages/2019_11
+  - file: pages/2019_10
+  - file: pages/2019_09
+  - file: pages/2019_07
+  - file: pages/2019_06
+  - file: pages/2019_05
+  - file: pages/2019_04
+  - file: pages/2019_03
