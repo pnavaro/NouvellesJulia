@@ -1,7 +1,8 @@
-- file: 'pages/2021_06'
+- file: 'pages/2021_07'
 
 - part: 2021
   chapters:
+  - file: 'pages/2021_06'
   - file: 'pages/2021_05'
   - file: 'pages/2021_04'
   - file: 'pages/2021_03'
