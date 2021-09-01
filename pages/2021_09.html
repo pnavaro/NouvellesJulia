@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mars 2019</title>
+    <title>Septembre 2021</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -86,7 +86,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="prev" title="Avril 2019" href="2019_04.html" />
+    <link rel="next" title="Juillet 2021" href="2021_07.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -115,8 +115,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="2021_09.html">
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
    Septembre 2021
   </a>
  </li>
@@ -235,7 +235,7 @@ commentsRunWhenDOMLoaded(addUtterances);
   2019
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="2019_12.html">
    Décembre 2019
@@ -276,8 +276,8 @@ commentsRunWhenDOMLoaded(addUtterances);
    Avril 2019
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="2019_03.html">
    Mars 2019
   </a>
  </li>
@@ -322,7 +322,7 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/pages/2019_03.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/pages/2021_09.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Télécharger le fichier source" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -342,7 +342,7 @@ commentsRunWhenDOMLoaded(addUtterances);
                 data-toggle="tooltip" data-placement="left" title="Dépôt source"><i
                     class="fab fa-github"></i>dépôt</button></a>
         
-        <a class="edit-button" href="https://github.com/pnavaro/NouvellesJulia/edit/master/pages/2019_03.md"><button
+        <a class="edit-button" href="https://github.com/pnavaro/NouvellesJulia/edit/master/pages/2021_09.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Modifier cette page"><i class="fas fa-pencil-alt"></i>suggestion de modification</button></a>
     </div>
@@ -362,6 +362,34 @@ commentsRunWhenDOMLoaded(addUtterances);
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contenu
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#billets-de-blog">
+   Billets de blog
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#packages">
+   Packages
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#videos">
+   Vidéos
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tutoriels-et-documentation">
+   Tutoriels et documentation
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -370,25 +398,61 @@ commentsRunWhenDOMLoaded(addUtterances);
         
               <div>
                 
-  <div class="section" id="mars-2019">
-<h1>Mars 2019<a class="headerlink" href="#mars-2019" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Le service <a class="reference external" href="https://mybinder.org">https://mybinder.org</a> vient de passer à julia 1.1. Voici le lien vers la <a class="reference external" href="https://github.com/binder-examples/demo-julia">démo</a>.</p>
-<p>Pour activer le service sur Github vous devez posséder un fichier <code class="docutils literal notranslate"><span class="pre">Project.toml</span></code>
-dans votre dépôt et c’est tout. Vos notebooks seront accessibles en ligne
-sur <a class="reference external" href="https://mybinder.org">binder</a>.</p>
-<p>Pour créer ce fichier <code class="docutils literal notranslate"><span class="pre">Project.toml</span></code>, lancer julia dans le répertoire du dépôt et basculer
-en mode Pkg, activer et ajouter vos dépendances.</p>
-<div class="highlight-jlcon notranslate"><div class="highlight"><pre><span></span><span class="gp">julia&gt;</span><span class="p">]</span>
-<span class="go">(v1.1) pkg&gt; activate .</span>
-<span class="go">(math-julia) pkg&gt; add FFTW</span>
-<span class="go">  Updating registry at `~/.julia/registries/General`</span>
-<span class="go">  Updating git-repo `https://github.com/JuliaRegistries/General.git`</span>
-<span class="go"> Resolving package versions...</span>
-<span class="go">  Updating `~/JuliaProjects/math-julia/Project.toml`</span>
-<span class="go">  [7a1cc6ca] + FFTW v0.2.4</span>
-<span class="go">  Updating `~/JuliaProjects/math-julia/Manifest.toml`</span>
-<span class="go">  [621f4979] + AbstractFFTs v0.3.2</span>
-</pre></div>
+  <div class="section" id="septembre-2021">
+<h1>Septembre 2021<a class="headerlink" href="#septembre-2021" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Bonjour tout le monde,</p>
+<p>Commençons par une bonne nouvelle pour le développement et la pérennité du langage: <a class="reference external" href="https://www.prnewswire.com/news-releases/julia-computing-leve-24-millions-de-dollars-en-serie-a-l-ancien-pdg-de-snowflake-bob-muglia-rejoint-le-conseil-d-administration-894411468.html">le financement de 24 millions de dollars obtenu par Julia Computing</a>. La version 1.7 est attendue très prochainement. Une grande partie des ressources listées ci-dessous proviennent de la conférence <a class="reference external" href="https://pretalx.com/juliacon2021/schedule/">JuliaCon 2021</a> qui a eu lieu cet été.</p>
+<div class="section" id="billets-de-blog">
+<h2>Billets de blog<a class="headerlink" href="#billets-de-blog" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.moll.dev/projects/effective-multi-dispatch/">Julia used Multiple Dispatch! It’s Super Effective!</a>.</p></li>
+<li><p><a class="reference external" href="https://julialang.org/blog/2021/08/julia-user-developer-survey/">Julia User &amp; Developer Survey 2021</a>: La France toujours bien placée.</p></li>
+<li><p><a class="reference external" href="https://juliaifrank.com/embedding-jupyter-and-pluto-notebooks-in-a-blog-post/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=embedding-jupyter-and-pluto-notebooks-in-a-blog-post">Embedding Jupyter and Pluto notebooks in a blog post is easy</a>.</p></li>
+<li><p><a class="reference external" href="https://www.stochasticlifestyle.com/useful-algorithms-that-are-not-optimized-by-jax-pytorch-or-tensorflow/">Useful Algorithms That Are Not Optimized By Jax, PyTorch, or Tensorflow</a></p></li>
+</ul>
+</div>
+<div class="section" id="packages">
+<h2>Packages<a class="headerlink" href="#packages" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/xiaodaigh/awesome-julia-performance">Awesome Julia performance</a>: Liste de packages et ressources pour accélérer vos programmes Julia.</p></li>
+<li><p><a class="reference external" href="https://github.com/JuliaEarth/GeoStats.jl">GeoStats.jl</a> : Package pour la géostatistique.</p></li>
+<li><p><a class="reference external" href="https://github.com/OutlierDetectionJL/OutlierDetection.jl">OutlierDetection.jl</a>: Détection de données aberrantes.</p></li>
+<li><p><a class="reference external" href="https://github.com/pazner/TriplotRecipes.jl">TriplotRecipes.jl</a>: Fonctions graphiques pour tracer des champs définis sur des maillages non structurés.</p></li>
+<li><p><a class="reference external" href="https://oscar.computeralgebra.de">OSCAR Computer Algebra System</a>: Ensemble de packages Julia pour l’algèbre computationnelle, l’arithmétique et la théorie des nombres.</p></li>
+</ul>
+</div>
+<div class="section" id="videos">
+<h2>Vidéos<a class="headerlink" href="#videos" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/IlFVwabDh6Q">State Of Julia</a>: Stefan Karpinksi, Viral Shah, Jeff Bezanson et Keno Fischer font une revue des progrès et des choses qui restent à faire pour Julia 2021.</p></li>
+<li><p><a class="reference external" href="https://joss.theoj.org/papers/10.21105/joss.03454">SummationByPartsOperators.jl</a>: A Julia library of summation-by-parts (SBP) operators used in finite difference, Fourier pseudospectral, continuous Galerkin, and discontinuous Galerkin methods to get provably stable semidiscretizations, paying special attention to boundary conditions.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/HEVOgSLBzWA">Simulating Big Models in Julia with ModelingToolkit</a>: Présentation du dernier package destiné à résoudre des équations différentielles.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/9YWwiFbaRx8">Code, docs, and tests: what’s in the General registry?</a>: Analyse de la qualité des packages disponibles en Julia. Malgré l’absence de processus de sélection, les résultats sont rassurants.</p></li>
+<li><p><a class="reference external" href="https://fluxml.ai/FastAI.jl">FastAI.jl</a> : Les bonnes pratiques pour les réseaux profonds en Julia.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/IlPoU5Yr2QI">Statistics with Julia from the ground up</a>: excellente vidéo pour les statisticiens tentés par Julia. Une démarche pédagogique et progressive adaptée aux débutants.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/tEd6driz37w">Quantum Computing with Julia</a> : Calcul quantique, Julia n’est pas en retard sur le sujet.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/KJleqSITuRo">Installing Julia + Jupyter (IJulia) + a bit more…</a> Vidéo de 18 minutes.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/5MtYO9tUfHw">dplyr equivalent in Julia</a> : pour retrouver cette logique dans la syntaxe qu’apprécient beaucoup les utilisateurs de R.</p></li>
+</ul>
+</div>
+<div class="section" id="tutoriels-et-documentation">
+<h2>Tutoriels et documentation<a class="headerlink" href="#tutoriels-et-documentation" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/aviatesk/juliacon2021-workshop-pkgdev">Package development: improving engineering quality &amp; latency</a></p></li>
+<li><p><a class="reference external" href="https://github.com/luraess/parallel-gpu-workshop-JuliaCon21">Solving differential equations in parallel on GPUs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/bkamins/JuliaCon2021-DataFrames-Tutorial">DataFrames.jl Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://fluxml.ai/tutorials/2021/01/26/mlp.html">Create a simple multi-layer perceptron with Julia</a></p></li>
+<li><p><a class="reference external" href="https://github.com/trixi-framework/tutorial-2021-icosahom">Trixi.jl tutorials</a>: Tutoriel pour apprendre à utiliser le package pour résoudre les équations différentielles hyperboliques avec Julia. Présentation JuliaCon : “<a class="reference external" href="https://youtu.be/hoViWRAhCBE">Adaptive and extendable simulations with Trixi.jl</a>”</p></li>
+</ul>
+<p>Portez-vous bien. Bonne rentrée!</p>
+<p>Pierre</p>
+<p><a class="reference external" href="https://listes.services.cnrs.fr/wws/subscribe/julia"><em>Abonnez-vous à la liste Julia du CNRS</em></a></p>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -421,15 +485,15 @@ en mode Pkg, activer et ajouter vos dépendances.</p>
 
 <div class='prev-next-bottom'>
     
-    <div id="prev">
-        <a class="left-prev" href="2019_04.html" title="précédent page">
-            <i class="prevnext-label fas fa-angle-left"></i>
+     <div id="next">
+        <a class="right-next" href="2021_07.html" title="suivant page">
             <div class="prevnext-info">
-                <p class="prevnext-label">précédent</p>
-                <p class="prevnext-title">Avril 2019</p>
+                <p class="prevnext-label">suivant</p>
+                <p class="prevnext-title">Juillet 2021</p>
             </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
         </a>
-    </div>
+     </div>
 
 </div>
         
