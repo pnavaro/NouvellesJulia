@@ -14,6 +14,7 @@ using Luxor
 # end
 
 function cocarde(fname)
+    Drawing(400, 350, fname)
     origin()
 
     circle(O, 135, :clip)
