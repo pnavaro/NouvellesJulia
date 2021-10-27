@@ -13,28 +13,18 @@ using Luxor
 # 
 # end
 
-function cocarde(fname)
-    Drawing(400, 350, fname)
+function create_logo(fname)
+    Drawing(200, 150, fname)
     origin()
-
-    circle(O, 135, :clip)
-    sethue("white")
-    paint()
-
-    sethue("blue")
-    setline(10)
-    circle(O, 130, :stroke)
-    sethue("red")
-    circle(O, 110, :stroke)
 
     sethue("black")
     fontface("JuliaMono-ExtraBold")
     fontsize(24)
-    text("Nouvelles", Point(0, -30), halign=:center, valign=:center)
-    translate(-50, -20)
-    scale(0.3)
+    text("Nouvelles", Point(0, -50), halign=:center, valign=:center)
+    translate(-70, -50)
+    scale(0.5)
     julialogo()
     finish()
 end
 
-cocarde("logo.png")
+create_logo("logo.png")
