@@ -47,7 +47,7 @@ css = css.decode("utf-8")
 content = content.strip()
 html_content = '<style type="text/css">'+css+'</style>'
 
-with open("images/three-balls.png", "rb") as image_file:
+with open("images/logo.png", "rb") as image_file:
     encoded_string = (base64.b64encode(image_file.read())).decode("utf-8")
 
 #html_content += '<table width=80%><tr><td>'
