@@ -37,9 +37,12 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script kind="utterances">
 
     var commentsRunWhenDOMLoaded = cb => {
@@ -77,16 +80,16 @@ commentsRunWhenDOMLoaded(addUtterances);
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Janvier 2022" href="2022_01.html" />
+    <link rel="prev" title="Mars 2022" href="2022_03.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="fr">
     
@@ -122,9 +125,9 @@ commentsRunWhenDOMLoaded(addUtterances);
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
-   Février 2022
+ <li class="toctree-l1">
+  <a class="reference internal" href="2022_03.html">
+   Mars 2022
   </a>
  </li>
 </ul>
@@ -133,7 +136,12 @@ commentsRunWhenDOMLoaded(addUtterances);
   2022
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Février 2022
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="2022_01.html">
    Janvier 2022
@@ -544,14 +552,6 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>Les bulletins précédents sont disponibles sur <a class="reference external" href="https://pnavaro.github.io/NouvellesJulia">https://pnavaro.github.io/NouvellesJulia</a></p>
 <p><a class="reference external" href="https://listes.services.cnrs.fr/wws/subscribe/julia"><em>Abonnez-vous à la liste Julia du CNRS</em></a></p>
 </div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -578,7 +578,14 @@ commentsRunWhenDOMLoaded(addUtterances);
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="2022_03.html" title="précédent page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">précédent</p>
+            <p class="prev-next-title">Mars 2022</p>
+        </div>
+    </a>
     <a class='right-next' id="next-link" href="2022_01.html" title="suivant page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">suivant</p>
@@ -595,7 +602,7 @@ commentsRunWhenDOMLoaded(addUtterances);
     
       Par Pierre Navaro<br/>
     
-      Dernière mise à jour le 02 févr. 2022.<br/>
+      Dernière mise à jour le 28 févr. 2022.<br/>
   </p>
 </footer>
 </main>
