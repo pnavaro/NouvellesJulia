@@ -2,7 +2,7 @@
 
 [![website](https://github.com/pnavaro/NouvellesJulia/workflows/jupyterbook/badge.svg)](https://pnavaro.github.io/NouvellesJulia/)
 
-Quelques liens et actualités sur le langage Julia séléctionnés chaque mois en francais. Il s'agit d'une sélection personnelle, pour une liste plus complète lisez la [Newsletter officielle](https://juliacomputing.com/blog/).
+[Quelques liens et actualités sur le langage Julia](https://pnavaro.github.io/NouvellesJulia) séléctionnés chaque mois en francais. Il s'agit d'une sélection personnelle, pour une liste plus complète lisez la [Newsletter officielle](https://juliacomputing.com/blog/).
 
 Le site <https://www.juliafran.org> contient également de nombreuses informations sur la communauté francophone.
 
