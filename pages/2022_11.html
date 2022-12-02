@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Avril 2022</title>
+    <title>Novembre 2022</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -85,12 +85,9 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Mars 2022" href="2022_03.html" />
-    <link rel="prev" title="Mai 2022" href="2022_05.html" />
+    <link rel="next" title="Octobre 2022" href="2022_10.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="fr">
     
@@ -142,8 +139,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="2022_11.html">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
                     Novembre 2022
                 </a>
             </li>
@@ -153,7 +150,7 @@ const thebe_selector_output = ".output, .cell_output"
   2022
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="2022_10.html">
    Octobre 2022
@@ -184,8 +181,8 @@ const thebe_selector_output = ".output, .cell_output"
    Mai 2022
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="2022_04.html">
    Avril 2022
   </a>
  </li>
@@ -475,7 +472,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/pnavaro/NouvellesJulia/edit/master/pages/2022_04.md"
+        <a href="https://github.com/pnavaro/NouvellesJulia/edit/master/pages/2022_11.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -503,7 +500,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/pages/2022_04.md"
+        <a href="../_sources/pages/2022_11.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -578,8 +575,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutoriels-et-documentation">
-   Tutoriels et documentation
+  <a class="reference internal nav-link" href="#tutoriels-ouvrages-et-documentation">
+   Tutoriels, ouvrages et documentation
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -596,7 +593,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Avril 2022</h1>
+                <h1>Novembre 2022</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -622,8 +619,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#tutoriels-et-documentation">
-   Tutoriels et documentation
+  <a class="reference internal nav-link" href="#tutoriels-ouvrages-et-documentation">
+   Tutoriels, ouvrages et documentation
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -641,69 +638,85 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="avril-2022">
-<h1>Avril 2022<a class="headerlink" href="#avril-2022" title="Lien permanent vers ce titre">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="novembre-2022">
+<h1>Novembre 2022<a class="headerlink" href="#novembre-2022" title="Lien permanent vers ce titre">#</a></h1>
 <p>Bonjour,</p>
-<p>La dernière version de Julia est la 1.7.2, la version 1.8.0 est en route, vous pouvez déjà regarder
-<a class="reference external" href="https://github.com/JuliaLang/julia/blob/v1.8.0-beta3/NEWS.md">les nouveautés</a>.
-La nouveauté la plus marquante sera de pouvoir utiliser <code class="docutils literal notranslate"><span class="pre">const</span></code> dans un type <code class="docutils literal notranslate"><span class="pre">mutable</span></code>.</p>
-<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">mutable</span><span class="w"> </span><span class="k">struct</span> <span class="kt">MySTruct</span><span class="w"></span>
-<span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">::</span><span class="w"> </span><span class="kt">Int</span><span class="w"></span>
-<span class="w">    </span><span class="k">const</span><span class="w"> </span><span class="n">b</span><span class="w"> </span><span class="o">::</span><span class="w"> </span><span class="kt">Int</span><span class="w"></span>
-<span class="k">end</span><span class="w"></span>
-</pre></div>
-</div>
-<p>La nouvelle la plus importante est la sortie de la <a class="reference external" href="https://jump.dev/blog/1.0.0-release/">version 1.0 de JuMP</a></p>
-<p>JuMP est en ensemble de packages pour l’optimisation mathématique et certainement
-l’une des plus belles bibliothèques écrites en Julia. Elle donne envie à tous les spécialistes
-d’apprendre le langage. Bravo à eux !</p>
+<p>Voici les liens et les packages que j’ai repérés le mois dernier
+pour vous aider a suivre l’actualité du langage Julia.  Hier a eu
+lieu le tutoriel Gridap.jl, les supports sont disponibles à l’adresse
+<a class="reference external" href="https://github.com/gridap/JourneeGridap2022">https://github.com/gridap/JourneeGridap2022</a>.  Gridap.jl est un très
+beau travail avec une interface très proche des mathématiques et
+des performances excellentes. Merci encore à Eric et Francesc d’être
+venus nous le présenter. Ils sont intéressés pour refaire ce tutoriel,
+si vous une possibilité dans vos labos, n’hésitez pas.</p>
+<p>Le Groupe Calcul se réunit la semaine prochaine pour discuter de l’organisation
+d’évènements en 2023. Vous pouvez aussi me faire part de vos idées.</p>
+<p>La version actuelle de Julia est la 1.8.3, la version 1.9 est en route.</p>
 <section id="billets-de-blog">
 <h2>Billets de blog<a class="headerlink" href="#billets-de-blog" title="Lien permanent vers ce titre">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://bkamins.github.io/julialang/2022/03/25/arrays.html">Back to the basics: array literals in Julia</a></p></li>
-<li><p><a class="reference external" href="https://daschw.github.io/recipes/">How do Recipes actually work?</a> : billet très utile pour vous lancer dans les “Plots recipes”.</p></li>
-<li><p><a class="reference external" href="https://towardsdatascience.com/r-vs-python-vs-julia-90456a2bcbab">R vs. Python vs. Julia: How easy it is to write efficient code?</a></p></li>
+<li><p><a class="reference external" href="https://arxiv.org/pdf/2211.02740.pdf">Bridging HPC Communities through the Julia Programming Language</a></p></li>
+<li><p><a class="reference external" href="https://www.freecodecamp.org/news/linear-models-vs-decision-trees-in-julia/">How to Use Linear Models and Decision Trees in Julia</a></p></li>
+<li><p><a class="reference external" href="https://bkamins.github.io/julialang/2022/11/25/paradox.html">The mighty trio: Project Euler, Simpson’s paradox, and DataFrames.jl</a></p></li>
+<li><p><a class="reference external" href="https://giordano.github.io/blog/2017-11-03-rock-paper-scissors/">Rock–paper–scissors game in less than 10 lines of Julia</a></p></li>
+<li><p><a class="reference external" href="https://juliazoid.com/heres-why-quantum-computing-could-be-the-big-break-for-the-julia-language-4684eb15bc12">Here’s why quantum computing could be the big break for the Julia Language</a></p></li>
+<li><p><a class="reference external" href="https://juliazoid.com/no-julia-is-not-34-000-000-000-times-faster-than-python-f63e956313d7">No, Julia is not 34,000,000,000 times faster than Python</a></p></li>
+<li><p><a class="reference external" href="https://forem.julialang.org/kshyatt/introducing-braketjl-10f2">Introducing Braket.jl - Quantum Computing with Julia</a></p></li>
+<li><p><a class="reference external" href="https://forem.julialang.org/saransh/my-experience-working-as-a-technical-writer-with-fluxml-part-1-33g">My experience working as a Technical Writer with FluxML</a></p></li>
+<li><p><a class="reference external" href="https://www.tamaspapp.eu/pages/blog/2022/hermite-approximation-spectralkit/index.html">Approximating a function using derivatives</a></p></li>
+<li><p><a class="reference external" href="https://juliazoid.com/the-best-julia-programming-books-going-into-2023-ab51adae091c">The Best Julia Programming Books Going into 2023</a></p></li>
+<li><p><a class="reference external" href="https://blog.esciencecenter.nl/10-examples-of-embedding-julia-in-c-c-66282477e62c">10 examples of embedding Julia in C/C++</a></p></li>
 </ul>
 </section>
 <section id="packages">
 <h2>Packages<a class="headerlink" href="#packages" title="Lien permanent vers ce titre">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/coudertlab/CrystalNets.jl">CrystalNets.jl</a>: Package réalisé par une équipe située en France, à Paris.  Je ne pourrais en dire plus, j’invite les amateurs de chimie à regarder ce package.</p></li>
-<li><p><a class="reference external" href="https://github.com/hyrodium/BasicBSpline.jl">BasicBSpline.jl</a>: un nouveau package sur les B-splines orienté mathématiques.</p></li>
-<li><p><a class="reference external" href="https://github.com/Chiil/MicroHH.jl">MicroHH.jl</a> : Code didactique de CFD 3D pour l’atmosphère</p></li>
-<li><p><a class="reference external" href="https://github.com/jmejia8/Metaheuristics.jl">Metaheuristics.jl</a> : pour les fans d’optimisation.</p></li>
-<li><p><a class="reference external" href="https://github.com/pc2/GPUInspector.jl">GPUInspector.jl</a> : petit outil très pratique pour tester ses GPU.</p></li>
-<li><p><a class="reference external" href="https://github.com/JuliaQX">JuliaQX</a> : organisation de packages Julia autour des circuits quantiques.</p></li>
-<li><p><a class="reference external" href="https://github.com/JuliaTesting/Aqua.jl">Aqua.jl</a>: Auto QUality Assurance for Julia packages</p></li>
-<li><p><a class="reference external" href="https://github.com/eth-cscs/ImplicitGlobalGrid.jl">ImplicitGlobalGrid.jl</a> : Parallélisation d’applications basées sur des stencils sur grille régulière sur GPU et CPU.</p></li>
-<li><p><a class="reference external" href="https://github.com/DhruvaSambrani/PlutoReport.jl">PlutoReport.jl</a>: créer des supports de présentation et des documents à partir de notebooks Pluto.</p></li>
+<li><p><a class="reference external" href="https://github.com/stevengj/PythonPlot.jl">PythonPlot.jl</a> : Plotting for Julia based on matplotlib.pyplot.</p></li>
+<li><p><a class="reference external" href="https://github.com/dlfivefifty/NumericalRepresentationTheory.jl">https://github.com/dlfivefifty/NumericalRepresentationTheory.jl</a> : A Julia package for representation theory of the symmetric group.</p></li>
+<li><p><a class="reference external" href="https://github.com/AP6YC/ClusterValidityIndices.jl">ClusterValidityIndices.jl</a> : Batch and Incremental Metrics for Unsupervised Learning.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/Cn5HO78Q2XA">DataDrivenDiffEq.jl- Data driven modeling in Julia</a></p></li>
+<li><p><a class="reference external" href="https://github.com/JuliaGaussianProcesses">Gaussian Processes for Machine Learning in Julia</a></p></li>
+<li><p><a class="reference external" href="https://github.com/singularitti/LaTeXFigures.jl">LaTeXFigures.jl</a> : Generate LaTeX format strings for figures.</p></li>
+<li><p><a class="reference external" href="https://github.com/Wimmerer/SparseBase.jl">SparseBase.jl</a> : Highly experimental function stubs for sparse arrays.</p></li>
+<li><p><a class="reference external" href="https://github.com/JuliaSmoothOptimizers/PartitionedVectors.jl">PartitionedVectors.jl</a></p></li>
+<li><p><a class="reference external" href="https://github.com/JuliaDynamics/StateSpaceSets.jl">StateSpaceSets.jl</a> : The <code class="docutils literal notranslate"><span class="pre">Dataset</span></code> interface for packages of JuliaDynamics</p></li>
+<li><p><a class="reference external" href="https://opensourc.es/blog/graphs.jl-the-myers-difference-algorithm/index.html">Graphs.jl: The Myers difference algorithm</a></p></li>
+<li><p><a class="reference external" href="https://github.com/JamieMair/Experimenter.jl">Experimenter.jl</a> : A Julia package to help researchers save the results of their experiments in a database in a scaleable way.</p></li>
+<li><p><a class="reference external" href="https://github.com/JuliaLinearAlgebra/BLISBLAS.jl">BLISBLAS.jl</a> : BLIS-pendant of MKL.jl</p></li>
+<li><p><a class="reference external" href="https://github.com/byuflowlab/FLOWPanel.jl">FLOWPanel.jl</a> : Three-dimensional panel method for high-Reynolds aerodynamics.</p></li>
 </ul>
 </section>
 <section id="videos">
 <h2>Vidéos<a class="headerlink" href="#videos" title="Lien permanent vers ce titre">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://youtu.be/v1pKoyCp434">Learn Julia with Us 02: Your first Julia Code</a>: deuxième vidéo d’une série mensuelle de 4 pour apprendre Julia</p></li>
-<li><p><a class="reference external" href="https://www.youtube.com/watch?v=W1hXttRmuks">SIMD in Julia</a> : webinaire officiel de Julia computing, nécessite une autentification.</p></li>
+<li><p><a class="reference external" href="http://www.stochasticlifestyle.com/integrating-equation-solvers-with-probabilistic-programming-through-differentiable-programming/">Integrating equation solvers with probabilistic programming through differentiable programming</a></p></li>
 </ul>
 </section>
-<section id="tutoriels-et-documentation">
-<h2>Tutoriels et documentation<a class="headerlink" href="#tutoriels-et-documentation" title="Lien permanent vers ce titre">#</a></h2>
+<section id="tutoriels-ouvrages-et-documentation">
+<h2>Tutoriels, ouvrages et documentation<a class="headerlink" href="#tutoriels-ouvrages-et-documentation" title="Lien permanent vers ce titre">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/sylvaticus/SPMLJ">Introduction to Scientific Programming and Machine Learning with Julia (SPMLJ)</a></p></li>
-<li><p><a class="reference external" href="https://cooperrc.github.io/Julia-learning/learning-julia.html">Sharing my Julia learning journey</a> : des exemples de codes Julia avec une grande varièté de domaines: analyse numérique, statistiques…</p></li>
-<li><p><a class="reference external" href="https://github.com/vincent-picaud/Some_Pluto_notebooks#141-une-introduction">Notebooks Julia sur l’autodiff</a> : Merci Vincent pour ces exemples !</p></li>
+<li><p><a class="reference external" href="https://github.com/lazarusA/JuliaProgramming2022">JuliaProgramming2022</a> : Cours Julia orienté “data science” avec un bel <a class="reference external" href="https://www.youtube.com/watch?v=VPfmsEumB2o">exemple de visualisation</a> qui utilisent  Zarr.jl, YAXArrays.jl and Makie.jl.</p></li>
+<li><p><a class="reference external" href="https://ufechner7.github.io/2022/08/18/installing-julia.html">Installing Julia 1.8 and VSCode</a></p></li>
+<li><p><a class="reference external" href="https://codeberg.org/AdamWysokinski/BBJ">Big Book of Julia</a></p></li>
 </ul>
 </section>
 <section id="divers">
 <h2>Divers<a class="headerlink" href="#divers" title="Lien permanent vers ce titre">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/simeonschaub/ReverseModePluto/">Notebook Pluto.jl avec un exemple de retro-propagation</a></p></li>
-<li><p><a class="reference external" href="https://github.com/Kevin-Mattheus-Moerman/JuliaAdventures">Simulation Gridap.jl avec une animation Makie.jl</a></p></li>
-<li><p><a class="reference external" href="https://github.com/vincentmolin/julia-github-search">Extension Firefox pour trouver rapidement un code en langage Julia</a></p></li>
-<li><p><a class="reference external" href="https://github.com/wg030/jlcode">A <span class="math notranslate nohighlight">\(\LaTeX\)</span> package for displaying Julia code using the listings package</a></p></li>
-</ul>
+<p>J’ai reçu un message de Ricardo Luis de Lisbonne qui m’a envoyé le lien vers son site fabriqué
+avec des notebooks Pluto.jl. C’est en portugais, mais le rendu est particulièrement chouette
+<a class="reference external" href="https://ricardo-luis.github.io/me2/">https://ricardo-luis.github.io/me2/</a></p>
+<p>A bientôt</p>
+<p>Pierre</p>
 <p><a class="reference external" href="https://listes.services.cnrs.fr/wws/subscribe/julia"><em>Abonnez-vous à la liste Julia du CNRS</em></a></p>
 </section>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -733,17 +746,10 @@ d’apprendre le langage. Bravo à eux !</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="2022_05.html" title="précédent page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">précédent</p>
-            <p class="prev-next-title">Mai 2022</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="2022_03.html" title="suivant page">
+    <a class='right-next' id="next-link" href="2022_10.html" title="suivant page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">suivant</p>
-        <p class="prev-next-title">Mars 2022</p>
+        <p class="prev-next-title">Octobre 2022</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
