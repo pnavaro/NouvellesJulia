@@ -141,8 +141,8 @@ const thebe_selector_output = ".output, .cell_output"
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="2022_11.html">
-                    Novembre 2022
+                <a class="reference internal" href="2022_12.html">
+                    Décembre 2022
                 </a>
             </li>
         </ul>
@@ -152,6 +152,11 @@ const thebe_selector_output = ".output, .cell_output"
  </span>
 </p>
 <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="2022_11.html">
+   Novembre 2022
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="2022_10.html">
    Octobre 2022
@@ -645,21 +650,21 @@ title="Print to PDF"
 <p><a class="reference external" href="https://julialang.org/blog/2021/03/julia-1.6-highlights/">Julia 1.6 Highlights</a></p>
 <p>Abel Siquiera propose un outil d’installation pour linux pour faire la mise à jour : <a class="reference external" href="https://github.com/abelsiqueira/jill">jill</a>.</p>
 <p>La progression la plus agréable est le fameux temps du premier plot, divisée par 2 sur mon poste :</p>
-<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span><span class="o">&gt;</span><span class="w"> </span><span class="nd">@time</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">Plots</span><span class="w"></span>
-<span class="w">  </span><span class="mf">3.711483</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="p">(</span><span class="mf">6.53</span><span class="w"> </span><span class="n">M</span><span class="w"> </span><span class="n">allocations</span><span class="o">:</span><span class="w"> </span><span class="mf">477.289</span><span class="w"> </span><span class="n">MiB</span><span class="p">,</span><span class="w"> </span><span class="mf">3.80</span><span class="o">%</span><span class="w"> </span><span class="n">gc</span><span class="w"> </span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="mf">0.11</span><span class="o">%</span><span class="w"> </span><span class="n">compilation</span><span class="w"> </span><span class="n">time</span><span class="p">)</span><span class="w"></span>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span><span class="o">&gt;</span><span class="w"> </span><span class="nd">@time</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">Plots</span>
+<span class="w">  </span><span class="mf">3.711483</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="p">(</span><span class="mf">6.53</span><span class="w"> </span><span class="n">M</span><span class="w"> </span><span class="n">allocations</span><span class="o">:</span><span class="w"> </span><span class="mf">477.289</span><span class="w"> </span><span class="n">MiB</span><span class="p">,</span><span class="w"> </span><span class="mf">3.80</span><span class="o">%</span><span class="w"> </span><span class="n">gc</span><span class="w"> </span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="mf">0.11</span><span class="o">%</span><span class="w"> </span><span class="n">compilation</span><span class="w"> </span><span class="n">time</span><span class="p">)</span>
 
-<span class="n">julia</span><span class="o">&gt;</span><span class="w"> </span><span class="nd">@time</span><span class="w"> </span><span class="n">display</span><span class="p">(</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="kt">LinRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="nb">π</span><span class="p">,</span><span class="mi">100</span><span class="p">))))</span><span class="w"></span>
-<span class="w">  </span><span class="mf">7.566719</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="p">(</span><span class="mf">10.80</span><span class="w"> </span><span class="n">M</span><span class="w"> </span><span class="n">allocations</span><span class="o">:</span><span class="w"> </span><span class="mf">623.809</span><span class="w"> </span><span class="n">MiB</span><span class="p">,</span><span class="w"> </span><span class="mf">3.41</span><span class="o">%</span><span class="w"> </span><span class="n">gc</span><span class="w"> </span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="mf">20.58</span><span class="o">%</span><span class="w"> </span><span class="n">compilation</span><span class="w"> </span><span class="n">time</span><span class="p">)</span><span class="w"></span>
+<span class="n">julia</span><span class="o">&gt;</span><span class="w"> </span><span class="nd">@time</span><span class="w"> </span><span class="n">display</span><span class="p">(</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="kt">LinRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="nb">π</span><span class="p">,</span><span class="mi">100</span><span class="p">))))</span>
+<span class="w">  </span><span class="mf">7.566719</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="p">(</span><span class="mf">10.80</span><span class="w"> </span><span class="n">M</span><span class="w"> </span><span class="n">allocations</span><span class="o">:</span><span class="w"> </span><span class="mf">623.809</span><span class="w"> </span><span class="n">MiB</span><span class="p">,</span><span class="w"> </span><span class="mf">3.41</span><span class="o">%</span><span class="w"> </span><span class="n">gc</span><span class="w"> </span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="mf">20.58</span><span class="o">%</span><span class="w"> </span><span class="n">compilation</span><span class="w"> </span><span class="n">time</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Notez ici que la macro &#64;time donne maintenant le temps pris par la compilation.
 Un truc que j’utilise pour aller plus vite, j’importe seulement le package <a class="reference external" href="https://github.com/jheinen/GR.jl">GR.jl</a> :</p>
-<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span><span class="o">&gt;</span><span class="w"> </span><span class="nd">@time</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">GR</span><span class="w"></span>
-<span class="w">  </span><span class="mf">0.146360</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="p">(</span><span class="mf">58.95</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">allocations</span><span class="o">:</span><span class="w"> </span><span class="mf">5.140</span><span class="w"> </span><span class="n">MiB</span><span class="p">,</span><span class="w"> </span><span class="mf">2.40</span><span class="o">%</span><span class="w"> </span><span class="n">compilation</span><span class="w"> </span><span class="n">time</span><span class="p">)</span><span class="w"></span>
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="n">julia</span><span class="o">&gt;</span><span class="w"> </span><span class="nd">@time</span><span class="w"> </span><span class="k">using</span><span class="w"> </span><span class="n">GR</span>
+<span class="w">  </span><span class="mf">0.146360</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="p">(</span><span class="mf">58.95</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">allocations</span><span class="o">:</span><span class="w"> </span><span class="mf">5.140</span><span class="w"> </span><span class="n">MiB</span><span class="p">,</span><span class="w"> </span><span class="mf">2.40</span><span class="o">%</span><span class="w"> </span><span class="n">compilation</span><span class="w"> </span><span class="n">time</span><span class="p">)</span>
 
-<span class="n">julia</span><span class="o">&gt;</span><span class="w"> </span><span class="nd">@time</span><span class="w"> </span><span class="n">display</span><span class="p">(</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="kt">LinRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="nb">π</span><span class="p">,</span><span class="mi">100</span><span class="p">))))</span><span class="w"></span>
-<span class="nb">nothing</span><span class="w"></span>
-<span class="w">  </span><span class="mf">0.858617</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="p">(</span><span class="mf">698.25</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">allocations</span><span class="o">:</span><span class="w"> </span><span class="mf">41.780</span><span class="w"> </span><span class="n">MiB</span><span class="p">,</span><span class="w"> </span><span class="mf">1.52</span><span class="o">%</span><span class="w"> </span><span class="n">gc</span><span class="w"> </span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="mf">89.03</span><span class="o">%</span><span class="w"> </span><span class="n">compilation</span><span class="w"> </span><span class="n">time</span><span class="p">)</span><span class="w"></span>
+<span class="n">julia</span><span class="o">&gt;</span><span class="w"> </span><span class="nd">@time</span><span class="w"> </span><span class="n">display</span><span class="p">(</span><span class="n">plot</span><span class="p">(</span><span class="n">sin</span><span class="o">.</span><span class="p">(</span><span class="kt">LinRange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="nb">π</span><span class="p">,</span><span class="mi">100</span><span class="p">))))</span>
+<span class="nb">nothing</span>
+<span class="w">  </span><span class="mf">0.858617</span><span class="w"> </span><span class="n">seconds</span><span class="w"> </span><span class="p">(</span><span class="mf">698.25</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="n">allocations</span><span class="o">:</span><span class="w"> </span><span class="mf">41.780</span><span class="w"> </span><span class="n">MiB</span><span class="p">,</span><span class="w"> </span><span class="mf">1.52</span><span class="o">%</span><span class="w"> </span><span class="n">gc</span><span class="w"> </span><span class="n">time</span><span class="p">,</span><span class="w"> </span><span class="mf">89.03</span><span class="o">%</span><span class="w"> </span><span class="n">compilation</span><span class="w"> </span><span class="n">time</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>La fonction <code class="docutils literal notranslate"><span class="pre">plot</span></code> est moins “générique” cependant…</p>
@@ -766,7 +771,7 @@ Un truc que j’utilise pour aller plus vite, j’importe seulement le package <
   
     By Pierre Navaro<br/>
   
-    Last updated on 03 déc. 2022.<br/>
+    Last updated on 03 janv. 2023.<br/>
 </p>
         </footer>
     </div>
