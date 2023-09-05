@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/main.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -53,40 +54,6 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script kind="utterances">
-
-    var commentsRunWhenDOMLoaded = cb => {
-    if (document.readyState != 'loading') {
-        cb()
-    } else if (document.addEventListener) {
-        document.addEventListener('DOMContentLoaded', cb)
-    } else {
-        document.attachEvent('onreadystatechange', function() {
-        if (document.readyState == 'complete') cb()
-        })
-    }
-}
-
-var addUtterances = () => {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://utteranc.es/client.js";
-    script.async = "async";
-
-    script.setAttribute("repo", "pnavaro/NouvellesJulia");
-    script.setAttribute("issue-term", "pathname");
-    script.setAttribute("theme", "github-light");
-    script.setAttribute("label", "💬 comment");
-    script.setAttribute("crossorigin", "anonymous");
-
-    sections = document.querySelectorAll("div.section");
-    if (sections !== null) {
-        section = sections[sections.length-1];
-        section.appendChild(script);
-    }
-}
-commentsRunWhenDOMLoaded(addUtterances);
-</script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -494,7 +461,7 @@ document.write(`
 <section id="packages">
 <h2>Packages<a class="headerlink" href="#packages" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/JuliaPlots/RecipesBase.jl">RecipesBase.jl</a> Base package for defining transformation recipes on user types for Plots.jl. Fonctionnalité très intéressante du package Plots.jl, elle permet de créer rapidement des “recettes” pour tracer facilement vos données en surchargeant la fonction <code class="docutils literal notranslate"><span class="pre">plot</span></code>.  L’exemple du README n’est pas terrible mais j’en ai trouvé un meilleur dans <a class="reference external" href="https://github.com/JuliaPlots/ExamplePlots.jl/blob/master/notebooks/usertype_recipes.ipynb">ce notebook</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/JuliaPlots/RecipesBase.jl">RecipesBase.jl</a> Base package for defining transformation recipes on user types for Plots.jl. Fonctionnalité très intéressante du package Plots.jl, elle permet de créer rapidement des « recettes » pour tracer facilement vos données en surchargeant la fonction <code class="docutils literal notranslate"><span class="pre">plot</span></code>.  L’exemple du README n’est pas terrible mais j’en ai trouvé un meilleur dans <a class="reference external" href="https://github.com/JuliaPlots/ExamplePlots.jl/blob/master/notebooks/usertype_recipes.ipynb">ce notebook</a>.</p></li>
 <li><p><a class="reference external" href="https://github.com/jlchan/ESDG.jl">ESDG.jl</a> Energy/Entropy Stable Discontinuous Galerkin.  Le package est en cours de développement mais c’est le premier que je vois sur cette méthode numérique. Le code est inspiré des exemples MATLAB du <a class="reference external" href="https://link.springer.com/book/10.1007/978-0-387-72067-8">livre de Hestaven et Warburton</a>.  A suivre pour ceux que ca intéresse.</p></li>
 <li><p><a class="reference external" href="https://github.com/angusmoore/Matte.jl">Matte.jl</a> : Julia-powered dashboards.  Si on regarde l’unique exemple proposé, on remarque qu’on est encore loin de <a class="reference external" href="https://docs.bokeh.org/en/latest/docs/gallery.html">Bokeh</a> ou <a class="reference external" href="https://shiny.rstudio.com/gallery/">Shiny</a> mais l’ecosystème Julia a besoin d’un package de ce genre. L’effort est louable et mérite une étoile d’encouragement sur GitHub.</p></li>
 </ul>
@@ -508,7 +475,7 @@ document.write(`
 <section id="divers">
 <h2>Divers<a class="headerlink" href="#divers" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://formation-calcul.fr">FoCal</a> est un catalogue en ligne de formation. Entrez “julia” dans le filtre et vous aurez toutes les formations à venir. J’essaierai de les recenser dans ce billet mensuel dès que la situation sera redevenu “normale”.</p></li>
+<li><p><a class="reference external" href="https://formation-calcul.fr">FoCal</a> est un catalogue en ligne de formation. Entrez « julia » dans le filtre et vous aurez toutes les formations à venir. J’essaierai de les recenser dans ce billet mensuel dès que la situation sera redevenu « normale ».</p></li>
 </ul>
 <p>Dans cette période particulière, je voudrais vous souhaiter à tous le meilleur, de tenir bon et de ne pas perdre votre bonne humeur.  N’hésitez pas à rejoindre le canal slack <strong>#french</strong> sur <a class="reference external" href="https://julialang.slack.com/">https://julialang.slack.com/</a> pour discuter.</p>
 <p><a class="reference external" href="https://listes.services.cnrs.fr/wws/info/julia">Abonnez-vous la liste Julia!</a></p>

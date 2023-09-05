@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/main.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -53,40 +54,6 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script kind="utterances">
-
-    var commentsRunWhenDOMLoaded = cb => {
-    if (document.readyState != 'loading') {
-        cb()
-    } else if (document.addEventListener) {
-        document.addEventListener('DOMContentLoaded', cb)
-    } else {
-        document.attachEvent('onreadystatechange', function() {
-        if (document.readyState == 'complete') cb()
-        })
-    }
-}
-
-var addUtterances = () => {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://utteranc.es/client.js";
-    script.async = "async";
-
-    script.setAttribute("repo", "pnavaro/NouvellesJulia");
-    script.setAttribute("issue-term", "pathname");
-    script.setAttribute("theme", "github-light");
-    script.setAttribute("label", "💬 comment");
-    script.setAttribute("crossorigin", "anonymous");
-
-    sections = document.querySelectorAll("div.section");
-    if (sections !== null) {
-        section = sections[sections.length-1];
-        section.appendChild(script);
-    }
-}
-commentsRunWhenDOMLoaded(addUtterances);
-</script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -498,7 +465,7 @@ Je vous souhaite une bien meilleure année 2021 en espérant que l’on puisse o
 <ul class="simple">
 <li><p><a class="reference external" href="https://emadmasroor.github.io/blog/2020/12/16/CFD-tutorial-in-julia/">CFD tutorial in Julia</a> est un notebook Julia avec la résolution des équations de Navier-Stokes en formulation psi-omega en deux dimensions pour un fluide incompressible.</p></li>
 <li><p><a class="reference external" href="https://blog.rogerluo.me/2020/03/31/yany/">Build your own Top Performance Quantum Circuit Simulator in ONE DAY!</a> est un tutoriel du mois de mars qui m’avait échappé. Il a été mis à jour récemment.</p></li>
-<li><p><a class="reference external" href="https://github.com/tndoan/ISLR.jl">JuliaLang version of “An Introduction to Statistical Learning: With Applications in R”</a> est un livre de référence qui propose maintenant les exemples en Julia, après <a class="reference external" href="https://github.com/JWarmenhoven/ISLR-python">Python</a> et <a class="reference external" href="https://cran.r-project.org/web/packages/ISLR/index.html">R</a>.</p></li>
+<li><p><a class="reference external" href="https://github.com/tndoan/ISLR.jl">JuliaLang version of « An Introduction to Statistical Learning: With Applications in R »</a> est un livre de référence qui propose maintenant les exemples en Julia, après <a class="reference external" href="https://github.com/JWarmenhoven/ISLR-python">Python</a> et <a class="reference external" href="https://cran.r-project.org/web/packages/ISLR/index.html">R</a>.</p></li>
 <li><p><a class="reference external" href="https://syl1.gitbook.io/julia-language-a-concise-tutorial/language-core/11-developing-julia-packages">Developing Julia packages</a> est un tutoriel complet pour créer un package Julia et l’héberger sur GitHub.</p></li>
 </ul>
 </section>
@@ -506,7 +473,7 @@ Je vous souhaite une bien meilleure année 2021 en espérant que l’on puisse o
 <h2>Divers<a class="headerlink" href="#divers" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://medium.com/towards-artificial-intelligence/learn-programming-while-assembling-an-on-screen-christmas-tree-1f09ba05e82a">Learn Programming While Assembling an On-Screen Christmas Tree</a> : Exercice de programmation Julia-Python pour voir les différences entre les deux syntaxes.</p></li>
-<li><p>Voici quelques solutions Julia de l’<a class="reference external" href="https://adventofcode.com">Advent Of Code 2020</a> : Les codes de <a class="reference external" href="https://github.com/jashughes/adventofcode2020">Jasmine Hughes</a> et <a class="reference external" href="https://github.com/mpjdem/adventofcode2020">Maarten Demeyer</a>.</p></li>
+<li><p>Voici quelques solutions Julia de l”<a class="reference external" href="https://adventofcode.com">Advent Of Code 2020</a> : Les codes de <a class="reference external" href="https://github.com/jashughes/adventofcode2020">Jasmine Hughes</a> et <a class="reference external" href="https://github.com/mpjdem/adventofcode2020">Maarten Demeyer</a>.</p></li>
 </ul>
 <p>Bonne rentrée.</p>
 <p>Pierre</p>

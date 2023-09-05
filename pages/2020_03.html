@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/main.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -53,40 +54,6 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script kind="utterances">
-
-    var commentsRunWhenDOMLoaded = cb => {
-    if (document.readyState != 'loading') {
-        cb()
-    } else if (document.addEventListener) {
-        document.addEventListener('DOMContentLoaded', cb)
-    } else {
-        document.attachEvent('onreadystatechange', function() {
-        if (document.readyState == 'complete') cb()
-        })
-    }
-}
-
-var addUtterances = () => {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://utteranc.es/client.js";
-    script.async = "async";
-
-    script.setAttribute("repo", "pnavaro/NouvellesJulia");
-    script.setAttribute("issue-term", "pathname");
-    script.setAttribute("theme", "github-light");
-    script.setAttribute("label", "💬 comment");
-    script.setAttribute("crossorigin", "anonymous");
-
-    sections = document.querySelectorAll("div.section");
-    if (sections !== null) {
-        section = sections[sections.length-1];
-        section.appendChild(script);
-    }
-}
-commentsRunWhenDOMLoaded(addUtterances);
-</script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -492,7 +459,7 @@ document.write(`
 <ul class="simple">
 <li><p><a class="reference external" href="https://nextjournal.com/DeepLearningNotes/">Hugh Murrell Deep Learning Notes</a> : Une série de 10 articles sur l’utilisation de Julia en Deep Learning. Cela démarre avec une introduction au langage puis la régression linéaire et cela monte progressivement jusqu’au réseau de neurones.</p></li>
 <li><p><a class="reference external" href="https://juliadocs.github.io/Julia-Cheat-Sheet/">The Fast Track to Julia</a> un pense-bête qui peut servir. Dommage qu’on ne puisse pas l’imprimer à la manière des <a class="reference external" href="https://www.datacamp.com/community/data-science-cheatsheets">Datacamp cheat sheets</a>.</p></li>
-<li><p>Je vous conseille de lire les <a class="reference external" href="https://docs.julialang.org/en/v1/manual/faq/">FAQ de la documentation officielle</a>. C’est rapide et on y apprend plein de choses. Regarder la réponse à la question <em>What does “type-stable” mean?</em>, c’est une erreur classique qui peut faire chuter les performances de votre code Julia.</p></li>
+<li><p>Je vous conseille de lire les <a class="reference external" href="https://docs.julialang.org/en/v1/manual/faq/">FAQ de la documentation officielle</a>. C’est rapide et on y apprend plein de choses. Regarder la réponse à la question <em>What does « type-stable » mean?</em>, c’est une erreur classique qui peut faire chuter les performances de votre code Julia.</p></li>
 </ul>
 </section>
 <section id="divers">

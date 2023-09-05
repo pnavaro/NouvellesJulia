@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/main.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -53,40 +54,6 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script kind="utterances">
-
-    var commentsRunWhenDOMLoaded = cb => {
-    if (document.readyState != 'loading') {
-        cb()
-    } else if (document.addEventListener) {
-        document.addEventListener('DOMContentLoaded', cb)
-    } else {
-        document.attachEvent('onreadystatechange', function() {
-        if (document.readyState == 'complete') cb()
-        })
-    }
-}
-
-var addUtterances = () => {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://utteranc.es/client.js";
-    script.async = "async";
-
-    script.setAttribute("repo", "pnavaro/NouvellesJulia");
-    script.setAttribute("issue-term", "pathname");
-    script.setAttribute("theme", "github-light");
-    script.setAttribute("label", "💬 comment");
-    script.setAttribute("crossorigin", "anonymous");
-
-    sections = document.querySelectorAll("div.section");
-    if (sections !== null) {
-        section = sections[sections.length-1];
-        section.appendChild(script);
-    }
-}
-commentsRunWhenDOMLoaded(addUtterances);
-</script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -470,7 +437,7 @@ document.write(`
 <section id="billets-de-blog">
 <h2>Billets de blog<a class="headerlink" href="#billets-de-blog" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://opensourc.es/blog/javis-beginning/">The beginning of Javis.jl</a>: Javis signifie “Julia Mathematical visualizations and animations”.</p></li>
+<li><p><a class="reference external" href="https://opensourc.es/blog/javis-beginning/">The beginning of Javis.jl</a>: Javis signifie « Julia Mathematical visualizations and animations ».</p></li>
 <li><p><a class="reference external" href="https://hackernoon.com/the-meaning-of-functions-in-julia-ix1u3u1p">The Meaning of Functions in Julia</a>: Billet très intéressant sur le fonctionnement des fonctions, des méthodes et de la surcharge en Julia.</p></li>
 <li><p><a class="reference external" href="https://www.stochasticlifestyle.com/gpu-accelerated-ode-solving-in-r-with-julia-the-language-of-libraries/">GPU-Accelerated ODE Solving in R with Julia, the Language of Libraries</a>: C’est une bonne idée d’offrir aux utilisateurs R la puissance du package DifferentialEquations.jl. Cependant j’ai testé et j’ai beaucoup de problèmes avec le package R <a class="reference external" href="https://github.com/Non-Contradiction/JuliaCall">JuliaCall</a> sur lequel repose <a class="reference external" href="https://github.com/SciML/diffeqr">diffeqr</a>. En revanche le package <a class="reference external" href="https://github.com/JuliaInterop/RCall.jl">RCall.jl</a> fonctionne très bien et c’est très pratique lorsque l’on veut traduire du R en Julia ;-)</p></li>
 <li><p><a class="reference external" href="https://julialang.org/blog/2020/08/invalidations/">Analyzing sources of compiler latency in Julia: method invalidations</a>: Les développeurs de Julia progressent sur le problème de la lattence. Ce premier plot qu’on attend et la compilation interminable de DifferentialEquations restent des freins à l’utilisation de Julia. Jeff Bezanson et son équipe l’ont bien compris.</p></li>
@@ -500,7 +467,7 @@ document.write(`
 <section id="divers">
 <h2>Divers<a class="headerlink" href="#divers" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/julia-actions/setup-julia">GitHub actions</a> : Je vous conseille d’utiliser les GitHub actions pour tester vos programmes Julia. La procédure est assez simple. Sachez que Julia est installé par défaut sur les runners et que le fichier de “workflow” peut être très simple:</p></li>
+<li><p><a class="reference external" href="https://github.com/julia-actions/setup-julia">GitHub actions</a> : Je vous conseille d’utiliser les GitHub actions pour tester vos programmes Julia. La procédure est assez simple. Sachez que Julia est installé par défaut sur les runners et que le fichier de « workflow » peut être très simple:</p></li>
 </ul>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CI</span>
 <span class="nt">on</span><span class="p">:</span>

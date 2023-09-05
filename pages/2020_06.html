@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/main.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -53,40 +54,6 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script kind="utterances">
-
-    var commentsRunWhenDOMLoaded = cb => {
-    if (document.readyState != 'loading') {
-        cb()
-    } else if (document.addEventListener) {
-        document.addEventListener('DOMContentLoaded', cb)
-    } else {
-        document.attachEvent('onreadystatechange', function() {
-        if (document.readyState == 'complete') cb()
-        })
-    }
-}
-
-var addUtterances = () => {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://utteranc.es/client.js";
-    script.async = "async";
-
-    script.setAttribute("repo", "pnavaro/NouvellesJulia");
-    script.setAttribute("issue-term", "pathname");
-    script.setAttribute("theme", "github-light");
-    script.setAttribute("label", "💬 comment");
-    script.setAttribute("crossorigin", "anonymous");
-
-    sections = document.querySelectorAll("div.section");
-    if (sections !== null) {
-        section = sections[sections.length-1];
-        section.appendChild(script);
-    }
-}
-commentsRunWhenDOMLoaded(addUtterances);
-</script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -466,7 +433,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="juin-2020">
 <h1>Juin 2020<a class="headerlink" href="#juin-2020" title="Lien permanent vers cette rubrique">#</a></h1>
-<p>Julia est dans sa version 1.4.2 depuis quelques jours. La version 1.5 est en route avec quelques <a class="reference external" href="https://docs.julialang.org/en/v1.5-dev/NEWS/">nouveautés</a>. Des nouvelles très “data science” ce mois-ci.</p>
+<p>Julia est dans sa version 1.4.2 depuis quelques jours. La version 1.5 est en route avec quelques <a class="reference external" href="https://docs.julialang.org/en/v1.5-dev/NEWS/">nouveautés</a>. Des nouvelles très « data science » ce mois-ci.</p>
 <section id="billets-de-blog">
 <h2>Billets de blog<a class="headerlink" href="#billets-de-blog" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
@@ -510,7 +477,7 @@ document.write(`
 <section id="tutoriels-et-documentation">
 <h2>Tutoriels et documentation<a class="headerlink" href="#tutoriels-et-documentation" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://github.com/tirthajyoti/Julia-data-science">Data science with Julia</a> : Série de notebooks bien faits sur la manipulation des tableaux et l’algèbre linéaire en Julia. Très peu de “data science” finalement. Je pense que ces supports sont particulièrement bien adaptés aux débutants venant de R, Python ou MATLAB.</p></li>
+<li><p><a class="reference external" href="https://github.com/tirthajyoti/Julia-data-science">Data science with Julia</a> : Série de notebooks bien faits sur la manipulation des tableaux et l’algèbre linéaire en Julia. Très peu de « data science » finalement. Je pense que ces supports sont particulièrement bien adaptés aux débutants venant de R, Python ou MATLAB.</p></li>
 <li><p><a class="reference external" href="https://github.com/deepaksuresh/Julia-for-data-science">Julia for Data Science</a> :  Deux notebooks dans ce dépôt. Un premier sur le package <a class="reference external" href="https://github.com/JuliaData/DataFrames.jl">DataFrames.jl</a>. Un deuxième notebook sur le chargement parallèle de fichiers CSV. L’intérêt de ce travail est de comparer les performances avec R et Python.</p></li>
 </ul>
 </section>

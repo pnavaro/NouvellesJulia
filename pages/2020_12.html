@@ -35,6 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/main.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -53,40 +54,6 @@
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script kind="utterances">
-
-    var commentsRunWhenDOMLoaded = cb => {
-    if (document.readyState != 'loading') {
-        cb()
-    } else if (document.addEventListener) {
-        document.addEventListener('DOMContentLoaded', cb)
-    } else {
-        document.attachEvent('onreadystatechange', function() {
-        if (document.readyState == 'complete') cb()
-        })
-    }
-}
-
-var addUtterances = () => {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src = "https://utteranc.es/client.js";
-    script.async = "async";
-
-    script.setAttribute("repo", "pnavaro/NouvellesJulia");
-    script.setAttribute("issue-term", "pathname");
-    script.setAttribute("theme", "github-light");
-    script.setAttribute("label", "💬 comment");
-    script.setAttribute("crossorigin", "anonymous");
-
-    sections = document.querySelectorAll("div.section");
-    if (sections !== null) {
-        section = sections[sections.length-1];
-        section.appendChild(script);
-    }
-}
-commentsRunWhenDOMLoaded(addUtterances);
-</script>
     <script src="../_static/translations.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
@@ -471,7 +438,7 @@ document.write(`
 <h2>Billets de blog<a class="headerlink" href="#billets-de-blog" title="Lien permanent vers cette rubrique">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://lwn.net/Articles/835930/">An introduction to Pluto</a> : un article <a class="reference external" href="http://LWN.net">LWN.net</a> sur Pluto, le notebook Julia sans états cachés avec une prime à l’interactivité. L’article est très complet avec beaucoup de références.</p></li>
-<li><p><a class="reference external" href="https://jkrumbiegel.github.io/pages/2020-10-31-tuples-and-vectors/">Tuples and Vectors, Allocations and Performance for Beginners</a> : billet didactique destiné aux débutants pour bien comprendre la différence entre la “pile” et le “tas” et ce que ça implique pour les accès à la mémoire.</p></li>
+<li><p><a class="reference external" href="https://jkrumbiegel.github.io/pages/2020-10-31-tuples-and-vectors/">Tuples and Vectors, Allocations and Performance for Beginners</a> : billet didactique destiné aux débutants pour bien comprendre la différence entre la « pile » et le « tas » et ce que ça implique pour les accès à la mémoire.</p></li>
 <li><p><a class="reference external" href="https://jkrumbiegel.github.io/pages/2020-11-15-makielayout/">Try MakieLayout - Perfect Layouts For Interactive Scientific Graphics in Julia</a> : démonstration de l’excellent package de visualisation <a class="reference external" href="http://makie.juliaplots.org/">Makie.jl</a>. L’interface est très différente de Plots.jl, mais cela vaut vraiment le coup de faire l’effort. Sur <a class="reference external" href="http://juliaplots.org/MakieReferenceImages/gallery/index.html">cette page,</a> vous avez un aperçu des possibilités.</p></li>
 <li><p><a class="reference external" href="https://kshyatt.github.io/post/firstjuliapr/">Making a first Julia pull request</a> : un billet intéressant surtout pour la démarche. On peut suivre les étapes et les précautions à prendre pour contribuer à un projet sur GitHub.</p></li>
 </ul>
@@ -490,7 +457,7 @@ document.write(`
 <li><p><a class="reference external" href="https://youtu.be/1K5G0atyCZc">Financial modelling on Large Data Streaming Sets</a> : du big data avec Julia avec cette vidéo de 54 minutes. On peut y voir une démonstration de l’excellent package <a class="reference external" href="https://github.com/joshday/OnlineStats.jl">OnlineStats</a>.</p></li>
 <li><p><a class="reference external" href="https://t.co/YLIIh3mo1O">Building Binaries for Your Julia Packages</a> : comment attacher du code écrit en C, C++, Fortran, Go, Rust, ou autre avec votre package. BinaryBuilder permet de le compiler et de le rendre utilisable dans votre environnement Julia.</p></li>
 <li><p><a class="reference external" href="https://youtu.be/JePBb9-ychE">Julia Macro hygiene made easy!</a> : courte vidéo pour apprendre comment utiliser la métaprogrammation en Julia. Les macros sont à utiliser avec parcimonie et précaution en Julia. Tom Kwong vous donne quelques conseils.</p></li>
-<li><p><a class="reference external" href="https://youtu.be/0FA3f1tWrZg">Data Science Leuven Meetup</a> : à partir de la 36e minute, une introduction à Julia orientée “Data Science”.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/0FA3f1tWrZg">Data Science Leuven Meetup</a> : à partir de la 36e minute, une introduction à Julia orientée « Data Science ».</p></li>
 <li><p><a class="reference external" href="https://youtu.be/waOzCGDNPzk">Ocean currents as two-dimensional advection diffusion</a> : Vidéo de démonstration des possibilités de Julia avec cet exemple de mécanique des fluides numérique. Le problème mathématique résolu n’est pas compliqué, mais on apprécie le rendu interactif des résultats dans un notebook Pluto. Il est disponible sur <a class="reference external" href="https://github.com/hdrake/simplEarth">ce dépôt</a>.</p></li>
 </ul>
 </section>
