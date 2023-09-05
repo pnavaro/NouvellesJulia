@@ -4,7 +4,7 @@
 
 [Quelques liens et actualités sur le langage Julia](https://pnavaro.github.io/NouvellesJulia) séléctionnés chaque mois en francais. Il s'agit d'une sélection personnelle, pour une liste plus complète lisez la [Newsletter officielle](https://juliacomputing.com/blog/).
 
-Le site <https://www.juliafran.org> contient également de nombreuses informations sur la communauté francophone.
+Le site <https://julialang.univ-nantes.fr> contient également de nombreuses informations sur la communauté francophone.
 
 Ces billets sont postés sur [la liste Julia du CNRS](https://listes.services.cnrs.fr/wws/subscribe/julia). Cette liste regroupe des développeurs francophones utilisateurs du langage Julia.  Si vous êtes intéressés, n’hésitez pas à vous abonner et à y poser vos questions.
 
