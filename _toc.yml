@@ -3,8 +3,8 @@ root: pages/2024_03
 parts:
 - caption: '2024'
   chapters:
-  - file: pages/2024_01
   - file: pages/2024_02
+  - file: pages/2024_01
 - caption: '2023'
   chapters:
   - file: pages/2023_12
