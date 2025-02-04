@@ -1,8 +1,9 @@
 format: jb-book
-root: pages/2024_12
+root: pages/2025_01
 parts:
 - caption: '2024'
   chapters:
+  - file: pages/2024_12
   - file: pages/2024_11
   - file: pages/2024_09
   - file: pages/2024_08
