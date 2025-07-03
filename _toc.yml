@@ -12,6 +12,7 @@ parts:
   chapters:
   - file: pages/2024_12
   - file: pages/2024_11
+  - file: pages/2024_10
   - file: pages/2024_09
   - file: pages/2024_08
   - file: pages/2024_06
