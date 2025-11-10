@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: 18.x
       - name: Install Jupyter Book (via myst)
@@ -40,7 +40,7 @@ jobs:
       - name: Build HTML Assets
         run: jupyter-book build --html
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: './_build/html'
       - name: Deploy to GitHub Pages
