@@ -5,9 +5,10 @@ project:
     - name: Pierre Navaro
   github: pnavaro/NouvellesJulia
   toc:
-    - file: pages/2025_11.md
+    - file: pages/2025_12.md
     - title: '2025'
       children:
+        - file: pages/2025_11.md
         - file: pages/2025_10.md
         - file: pages/2025_09.md
         - file: pages/2025_08.md
